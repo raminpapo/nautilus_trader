@@ -1,0 +1,235 @@
+# Documentation: `crates/model/src/identifiers/position_id.rs`
+**Generated:** 2025-11-15T19:40:02.768489Z
+**File Size:** 3531 bytes
+**Extension:** .rs
+**Type:** text
+
+---
+
+## Table of Contents
+
+1. [File Metadata](#file-metadata)
+2. [Source Code](#source-code)
+3. [Overview](#overview)
+4. [Detailed Analysis](#detailed-analysis)
+5. [Usage Examples](#usage-examples)
+6. [Related Files](#related-files)
+7. [Notes](#notes)
+
+---
+
+## File Metadata
+
+- **Path:** `crates/model/src/identifiers/position_id.rs`
+- **Size:** 3,531 bytes
+- **Lines:** 113
+- **Extension:** `.rs`
+- **Type:** text
+- **Classes:** 4
+- **Functions:** 7
+
+---
+
+## Source Code
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+//! Represents a valid position ID.
+
+use std::{
+    fmt::{Debug, Display, Formatter},
+    hash::Hash,
+};
+
+use nautilus_core::correctness::{FAILED, check_valid_string_utf8};
+use ustr::Ustr;
+
+/// Represents a valid position ID.
+#[repr(C)]
+#[derive(Clone, Copy, Hash, PartialEq, Eq, PartialOrd, Ord)]
+#[cfg_attr(
+    feature = "python",
+    pyo3::pyclass(module = "nautilus_trader.core.nautilus_pyo3.model")
+)]
+pub struct PositionId(Ustr);
+
+impl PositionId {
+    /// Creates a new [`PositionId`] instance with correctness checking.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if `value` is not a valid string.
+    ///
+    /// # Notes
+    ///
+    /// PyO3 requires a `Result` type for proper error handling and stacktrace printing in Python.
+    pub fn new_checked<T: AsRef<str>>(value: T) -> anyhow::Result<Self> {
+        let value = value.as_ref();
+        check_valid_string_utf8(value, stringify!(value))?;
+        Ok(Self(Ustr::from(value)))
+    }
+
+    /// Creates a new [`PositionId`] instance.
+    ///
+    /// # Panics
+    ///
+    /// Panics if `value` is not a valid string.
+    pub fn new<T: AsRef<str>>(value: T) -> Self {
+        Self::new_checked(value).expect(FAILED)
+    }
+
+    /// Sets the inner identifier value.
+    #[cfg_attr(not(feature = "python"), allow(dead_code))]
+    pub(crate) fn set_inner(&mut self, value: &str) {
+        self.0 = Ustr::from(value);
+    }
+
+    /// Returns the inner identifier value.
+    #[must_use]
+    pub fn inner(&self) -> Ustr {
+        self.0
+    }
+
+    /// Returns the inner identifier value as a string slice.
+    #[must_use]
+    pub fn as_str(&self) -> &str {
+        self.0.as_str()
+    }
+
+    /// Checks if the position ID is virtual.
+    ///
+    /// Returns `true` if the position ID starts with "P-", otherwise `false`.
+    #[must_use]
+    pub fn is_virtual(&self) -> bool {
+        self.0.starts_with("P-")
+    }
+}
+
+impl Debug for PositionId {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{:?}", self.0)
+    }
+}
+impl Display for PositionId {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{}", self.0)
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Tests
+////////////////////////////////////////////////////////////////////////////////
+#[cfg(test)]
+mod tests {
+    use rstest::rstest;
+
+    use super::PositionId;
+    use crate::identifiers::stubs::*;
+
+    #[rstest]
+    fn test_string_reprs(position_id_test: PositionId) {
+        assert_eq!(position_id_test.as_str(), "P-123456789");
+        assert_eq!(format!("{position_id_test}"), "P-123456789");
+    }
+}
+```
+
+
+---
+
+## Overview
+
+This file is located at `crates/model/src/identifiers/position_id.rs` within the repository.
+
+**Classes defined:** PositionId, PositionId, Debug, Display
+
+**Functions defined:** set_inner, inner, as_str, is_virtual, fmt, fmt, test_string_reprs
+
+
+---
+
+## Detailed Analysis
+
+### Classes
+
+#### `PositionId`
+
+**Type:** struct
+
+
+#### `PositionId`
+
+**Type:** impl
+
+
+#### `Debug`
+
+**Type:** impl
+
+
+#### `Display`
+
+**Type:** impl
+
+
+### Functions
+
+#### `set_inner(&mut self, value: &str)`
+
+
+#### `inner(&self)`
+
+
+#### `as_str(&self)`
+
+
+#### `is_virtual(&self)`
+
+
+#### `fmt(&self, f: &mut Formatter<'_>)`
+
+
+#### `fmt(&self, f: &mut Formatter<'_>)`
+
+
+#### `test_string_reprs(position_id_test: PositionId)`
+
+
+
+---
+
+## Usage Examples
+
+*Usage examples are specific to the file type and context.*
+
+
+---
+
+## Related Files
+
+**Directory:** `crates/model/src/identifiers`
+
+See [folder index](./index.md) for related files.
+
+
+---
+
+## Notes
+
+*No special notes for this file.*
+
+

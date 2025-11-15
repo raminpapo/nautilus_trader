@@ -1,0 +1,248 @@
+# Documentation: `tests/unit_tests/indicators/test_keltner_channel.py`
+**Generated:** 2025-11-15T19:40:09.194033Z
+**File Size:** 4239 bytes
+**Extension:** .py
+**Type:** text
+
+---
+
+## Table of Contents
+
+1. [File Metadata](#file-metadata)
+2. [Source Code](#source-code)
+3. [Overview](#overview)
+4. [Detailed Analysis](#detailed-analysis)
+5. [Usage Examples](#usage-examples)
+6. [Related Files](#related-files)
+7. [Notes](#notes)
+
+---
+
+## File Metadata
+
+- **Path:** `tests/unit_tests/indicators/test_keltner_channel.py`
+- **Size:** 4,239 bytes
+- **Lines:** 110
+- **Extension:** `.py`
+- **Type:** text
+- **Imports:** 4
+- **Classes:** 1
+- **Functions:** 11
+
+---
+
+## Source Code
+
+```python
+# -------------------------------------------------------------------------------------------------
+#  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+#  https://nautechsystems.io
+#
+#  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+#  You may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+# -------------------------------------------------------------------------------------------------
+
+from nautilus_trader.indicators import KeltnerChannel
+from nautilus_trader.indicators import MovingAverageType
+from nautilus_trader.test_kit.providers import TestInstrumentProvider
+from nautilus_trader.test_kit.stubs.data import TestDataStubs
+
+
+AUDUSD_SIM = TestInstrumentProvider.default_fx_ccy("AUD/USD")
+
+
+class TestKeltnerChannel:
+    def setup(self):
+        # Fixture Setup
+        self.kc = KeltnerChannel(10, 2.5, MovingAverageType.EXPONENTIAL, MovingAverageType.SIMPLE)
+
+    def test_name_returns_expected_string(self):
+        # Arrange, Act, Assert
+        assert self.kc.name == "KeltnerChannel"
+
+    def test_str_repr_returns_expected_string(self):
+        # Arrange, Act, Assert
+        assert str(self.kc) == "KeltnerChannel(10, 2.5, EXPONENTIAL, SIMPLE, True, 0.0)"
+        assert repr(self.kc) == "KeltnerChannel(10, 2.5, EXPONENTIAL, SIMPLE, True, 0.0)"
+
+    def test_period_returns_expected_value(self):
+        # Arrange, Act, Assert
+        assert self.kc.period == 10
+
+    def test_k_multiple_returns_expected_value(self):
+        # Arrange, Act, Assert
+        assert self.kc.k_multiplier == 2.5
+
+    def test_initialized_without_inputs_returns_false(self):
+        # Arrange, Act, Assert
+        assert self.kc.initialized is False
+
+    def test_initialized_with_required_inputs_returns_true(self):
+        # Arrange
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+
+        # Act, Assert
+        assert self.kc.initialized is True
+
+    def test_handle_bar_updates_indicator(self):
+        # Arrange
+        indicator = KeltnerChannel(10, 2.5, MovingAverageType.EXPONENTIAL, MovingAverageType.SIMPLE)
+
+        bar = TestDataStubs.bar_5decimal()
+
+        # Act
+        indicator.handle_bar(bar)
+
+        # Assert
+        assert indicator.has_inputs
+        assert indicator.middle == 1.0000266666666666
+
+    def test_value_with_one_input_returns_expected_value(self):
+        # Arrange
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+
+        # Act, Assert
+        assert self.kc.upper == 1.0006
+        assert self.kc.middle == 1.0001
+        assert self.kc.lower == 0.9996
+
+    def test_value_with_three_inputs_returns_expected_value(self):
+        # Arrange
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00030, 1.00010, 1.00020)
+        self.kc.update_raw(1.00040, 1.00020, 1.00030)
+
+        # Act, Assert
+        assert self.kc.upper == 1.0006512396694212
+        assert self.kc.middle == 1.0001512396694212
+        assert self.kc.lower == 0.9996512396694213
+
+    def test_reset_successfully_returns_indicator_to_fresh_state(self):
+        # Arrange
+        self.kc.update_raw(1.00020, 1.00000, 1.00010)
+        self.kc.update_raw(1.00030, 1.00010, 1.00020)
+        self.kc.update_raw(1.00040, 1.00020, 1.00030)
+
+        # Act
+        self.kc.reset()
+
+        # Assert
+        assert not self.kc.initialized
+```
+
+
+---
+
+## Overview
+
+This file is located at `tests/unit_tests/indicators/test_keltner_channel.py` within the repository.
+
+**Classes defined:** TestKeltnerChannel
+
+**Functions defined:** setup, test_name_returns_expected_string, test_str_repr_returns_expected_string, test_period_returns_expected_value, test_k_multiple_returns_expected_value, test_initialized_without_inputs_returns_false, test_initialized_with_required_inputs_returns_true, test_handle_bar_updates_indicator, test_value_with_one_input_returns_expected_value, test_value_with_three_inputs_returns_expected_value and 1 more
+
+**Import statements:** 4
+
+
+---
+
+## Detailed Analysis
+
+### Classes
+
+#### `TestKeltnerChannel`
+
+
+### Functions
+
+#### `setup(self)`
+
+
+#### `test_name_returns_expected_string(self)`
+
+
+#### `test_str_repr_returns_expected_string(self)`
+
+
+#### `test_period_returns_expected_value(self)`
+
+
+#### `test_k_multiple_returns_expected_value(self)`
+
+
+#### `test_initialized_without_inputs_returns_false(self)`
+
+
+#### `test_initialized_with_required_inputs_returns_true(self)`
+
+
+#### `test_handle_bar_updates_indicator(self)`
+
+
+#### `test_value_with_one_input_returns_expected_value(self)`
+
+
+#### `test_value_with_three_inputs_returns_expected_value(self)`
+
+
+#### `test_reset_successfully_returns_indicator_to_fresh_state(self)`
+
+
+### Imports
+
+- `from nautilus_trader.indicators import KeltnerChannel`
+- `from nautilus_trader.indicators import MovingAverageType`
+- `from nautilus_trader.test_kit.providers import TestInstrumentProvider`
+- `from nautilus_trader.test_kit.stubs.data import TestDataStubs`
+
+
+---
+
+## Usage Examples
+
+### Importing
+
+```python
+from tests.unit_tests.indicators.test_keltner_channel import TestKeltnerChannel
+```
+
+
+---
+
+## Related Files
+
+This file imports from the following modules:
+
+- `from nautilus_trader.indicators import KeltnerChannel`
+- `from nautilus_trader.indicators import MovingAverageType`
+- `from nautilus_trader.test_kit.providers import TestInstrumentProvider`
+- `from nautilus_trader.test_kit.stubs.data import TestDataStubs`
+
+**Directory:** `tests/unit_tests/indicators`
+
+See [folder index](./index.md) for related files.
+
+
+---
+
+## Notes
+
+**Testing:** This appears to be a test file. Ensure it's run as part of the test suite.
+
+

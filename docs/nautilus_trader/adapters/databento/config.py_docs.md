@@ -1,0 +1,169 @@
+# Documentation: `nautilus_trader/adapters/databento/config.py`
+**Generated:** 2025-11-15T19:40:04.218002Z
+**File Size:** 3808 bytes
+**Extension:** .py
+**Type:** text
+
+---
+
+## Table of Contents
+
+1. [File Metadata](#file-metadata)
+2. [Source Code](#source-code)
+3. [Overview](#overview)
+4. [Detailed Analysis](#detailed-analysis)
+5. [Usage Examples](#usage-examples)
+6. [Related Files](#related-files)
+7. [Notes](#notes)
+
+---
+
+## File Metadata
+
+- **Path:** `nautilus_trader/adapters/databento/config.py`
+- **Size:** 3,808 bytes
+- **Lines:** 71
+- **Extension:** `.py`
+- **Type:** text
+- **Imports:** 2
+- **Classes:** 1
+
+---
+
+## Source Code
+
+```python
+# -------------------------------------------------------------------------------------------------
+#  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+#  https://nautechsystems.io
+#
+#  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+#  You may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+# -------------------------------------------------------------------------------------------------
+
+from nautilus_trader.config import LiveDataClientConfig
+from nautilus_trader.model.identifiers import InstrumentId
+
+
+class DatabentoDataClientConfig(LiveDataClientConfig, frozen=True):
+    """
+    Configuration for ``DatabentoDataClient`` instances.
+
+    Parameters
+    ----------
+    api_key : str, optional
+        The Databento API secret key.
+        If ``None`` then will source the `DATABENTO_API_KEY` environment variable.
+    http_gateway : str, optional
+        The historical HTTP client gateway override.
+    live_gateway : str, optional
+        The live client gateway override.
+    use_exchange_as_venue : bool, default True
+        If the `exchange` field will be used as the venue for instrument IDs.
+    timeout_initial_load : float, default 15.0
+        The timeout (seconds) to wait for instruments to load (concurrently per dataset).
+    mbo_subscriptions_delay : float, default 3.0
+        The timeout (seconds) to wait for MBO/L3 subscriptions (concurrently per dataset).
+        After the timeout the MBO order book feed will start and replay messages from the initial
+        snapshot and then all deltas.
+    bars_timestamp_on_close : bool, default True
+        If bar data should be timestamped on the close (True) or open (False) of the bar period.
+        When True, both ts_event and ts_init are set to the bar close time.
+        When False, both ts_event and ts_init are set to the bar open time.
+    parent_symbols : dict[str, set[str]], optional
+        The Databento parent symbols to subscribe to instrument definitions for on start.
+        This is a map of Databento dataset keys -> to a sequence of the parent symbols,
+        e.g. {'GLBX.MDP3', ['ES.FUT', 'ES.OPT']} (for all E-mini S&P 500 futures and options products).
+    instrument_ids : list[InstrumentId], optional
+        The instrument IDs to request instrument definitions for on start.
+    venue_dataset_map: dict[str, str], optional
+        A dictionary to override the default dataset used for a venue.
+    reconnect_timeout_mins : int, optional, default 10
+        The timeout (minutes) for reconnection attempts when the live connection is lost.
+        Set to ``None`` to retry indefinitely (use with caution - see documentation).
+        The client uses rapid initial retries followed by exponential backoff.
+        See the Connection Stability section in the Databento integration guide for details.
+
+    """
+
+    api_key: str | None = None
+    http_gateway: str | None = None
+    live_gateway: str | None = None
+    use_exchange_as_venue: bool = True
+    timeout_initial_load: float | None = 15.0
+    mbo_subscriptions_delay: float | None = 3.0  # Need to have received all definitions
+    bars_timestamp_on_close: bool = True
+    instrument_ids: list[InstrumentId] | None = None
+    parent_symbols: dict[str, set[str]] | None = None
+    venue_dataset_map: dict[str, str] | None = None
+    reconnect_timeout_mins: int | None = 10
+```
+
+
+---
+
+## Overview
+
+This file is located at `nautilus_trader/adapters/databento/config.py` within the repository.
+
+**Classes defined:** DatabentoDataClientConfig
+
+**Import statements:** 2
+
+
+---
+
+## Detailed Analysis
+
+### Classes
+
+#### `DatabentoDataClientConfig`
+
+**Inherits from:** LiveDataClientConfig, frozen=True
+
+
+### Imports
+
+- `from nautilus_trader.config import LiveDataClientConfig`
+- `from nautilus_trader.model.identifiers import InstrumentId`
+
+
+---
+
+## Usage Examples
+
+### Importing
+
+```python
+from nautilus_trader.adapters.databento.config import DatabentoDataClientConfig
+```
+
+
+---
+
+## Related Files
+
+This file imports from the following modules:
+
+- `from nautilus_trader.config import LiveDataClientConfig`
+- `from nautilus_trader.model.identifiers import InstrumentId`
+
+**Directory:** `nautilus_trader/adapters/databento`
+
+See [folder index](./index.md) for related files.
+
+
+---
+
+## Notes
+
+**Security:** This file may contain sensitive patterns: secret, api_key. Ensure proper handling of secrets.
+
+

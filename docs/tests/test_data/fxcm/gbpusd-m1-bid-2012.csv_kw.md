@@ -1,0 +1,48 @@
+# Keywords: `tests/test_data/fxcm/gbpusd-m1-bid-2012.csv`
+
+**Generated:** 2025-11-15T19:40:08.355666Z
+
+---
+
+## Keyword Index
+
+### C
+
+#### `close`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [tests/test_data/fxcm/gbpusd-m1-bid-2012.csv](./gbpusd-m1-bid-2012.csv_docs.md)
+
+### H
+
+#### `high`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [tests/test_data/fxcm/gbpusd-m1-bid-2012.csv](./gbpusd-m1-bid-2012.csv_docs.md)
+
+### L
+
+#### `low`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [tests/test_data/fxcm/gbpusd-m1-bid-2012.csv](./gbpusd-m1-bid-2012.csv_docs.md)
+
+### O
+
+#### `open`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [tests/test_data/fxcm/gbpusd-m1-bid-2012.csv](./gbpusd-m1-bid-2012.csv_docs.md)
+
+### T
+
+#### `timestamp`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [tests/test_data/fxcm/gbpusd-m1-bid-2012.csv](./gbpusd-m1-bid-2012.csv_docs.md)
+

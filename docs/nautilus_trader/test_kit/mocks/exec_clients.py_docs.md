@@ -1,0 +1,606 @@
+# Documentation: `nautilus_trader/test_kit/mocks/exec_clients.py`
+**Generated:** 2025-11-15T19:40:05.342436Z
+**File Size:** 13161 bytes
+**Extension:** .py
+**Type:** text
+
+---
+
+## Table of Contents
+
+1. [File Metadata](#file-metadata)
+2. [Source Code](#source-code)
+3. [Overview](#overview)
+4. [Detailed Analysis](#detailed-analysis)
+5. [Usage Examples](#usage-examples)
+6. [Related Files](#related-files)
+7. [Notes](#notes)
+
+---
+
+## File Metadata
+
+- **Path:** `nautilus_trader/test_kit/mocks/exec_clients.py`
+- **Size:** 13,161 bytes
+- **Lines:** 372
+- **Extension:** `.py`
+- **Type:** text
+- **Imports:** 16
+- **Classes:** 2
+- **Functions:** 27
+
+---
+
+## Source Code
+
+```python
+# -------------------------------------------------------------------------------------------------
+#  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+#  https://nautechsystems.io
+#
+#  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+#  You may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+# -------------------------------------------------------------------------------------------------
+
+import inspect
+
+from nautilus_trader.core.datetime import dt_to_unix_nanos
+from nautilus_trader.execution.client import ExecutionClient
+from nautilus_trader.execution.messages import GenerateFillReports
+from nautilus_trader.execution.messages import GenerateOrderStatusReport
+from nautilus_trader.execution.messages import GenerateOrderStatusReports
+from nautilus_trader.execution.messages import GeneratePositionStatusReports
+from nautilus_trader.execution.messages import TradingCommand
+from nautilus_trader.execution.reports import FillReport
+from nautilus_trader.execution.reports import OrderStatusReport
+from nautilus_trader.execution.reports import PositionStatusReport
+from nautilus_trader.live.execution_client import LiveExecutionClient
+from nautilus_trader.model.enums import OmsType
+from nautilus_trader.model.identifiers import AccountId
+from nautilus_trader.model.identifiers import InstrumentId
+from nautilus_trader.model.identifiers import VenueOrderId
+
+
+class MockExecutionClient(ExecutionClient):
+    """
+    Provides a mock execution client for testing.
+
+    The client will append all method calls to the calls list.
+
+    Parameters
+    ----------
+    client_id : ClientId
+        The client ID.
+    venue : Venue, optional
+        The client venue. If multi-venue then can be ``None``.
+    account_type : AccountType
+        The account type for the client.
+    base_currency : Currency, optional
+        The account base currency for the client. Use ``None`` for multi-currency accounts.
+    msgbus : MessageBus
+        The message bus for the client.
+    cache : Cache
+        The cache for the client
+    clock : Clock
+        The clock for the client.
+
+    """
+
+    def __init__(
+        self,
+        client_id,
+        venue,
+        account_type,
+        base_currency,
+        msgbus,
+        cache,
+        clock,
+        config=None,
+    ) -> None:
+        super().__init__(
+            client_id=client_id,
+            venue=venue,
+            oms_type=OmsType.HEDGING,
+            account_type=account_type,
+            base_currency=base_currency,
+            msgbus=msgbus,
+            cache=cache,
+            clock=clock,
+            config=config,
+        )
+
+        self.calls: list[str] = []
+        self.commands: list[TradingCommand] = []
+
+    def _start(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self._set_connected()
+
+    def _stop(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self._set_connected(False)
+
+    def _reset(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+    def _dispose(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+    # -- COMMANDS ---------------------------------------------------------------------------------
+
+    def account_inquiry(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def submit_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def submit_order_list(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def modify_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def cancel_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def cancel_all_orders(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+
+class MockLiveExecutionClient(LiveExecutionClient):
+    """
+    Provides a mock execution client for testing.
+
+    The client will append all method calls to the calls list.
+
+    Parameters
+    ----------
+    client_id : ClientId
+        The client ID.
+    venue : Venue, optional
+        The client venue. If multi-venue then can be ``None``.
+    account_type : AccountType
+        The account type for the client.
+    base_currency : Currency, optional
+        The account base currency for the client. Use ``None`` for multi-currency accounts.
+    instrument_provider : InstrumentProvider
+        The instrument provider for the client.
+    msgbus : MessageBus
+        The message bus for the client.
+    cache : Cache
+        The cache for the client.
+    clock : Clock
+        The clock for the client.
+
+    """
+
+    def __init__(
+        self,
+        loop,
+        client_id,
+        venue,
+        account_type,
+        base_currency,
+        instrument_provider,
+        msgbus,
+        cache,
+        clock,
+    ) -> None:
+        super().__init__(
+            loop=loop,
+            client_id=client_id,
+            venue=venue,
+            oms_type=OmsType.HEDGING,
+            account_type=account_type,
+            base_currency=base_currency,
+            instrument_provider=instrument_provider,
+            msgbus=msgbus,
+            cache=cache,
+            clock=clock,
+        )
+
+        self._set_account_id(AccountId(f"{client_id}-001"))
+        self._order_status_reports: dict[VenueOrderId, OrderStatusReport] = {}
+        self._trades_reports: dict[VenueOrderId, list[FillReport]] = {}
+        self._position_status_reports: dict[InstrumentId, list[PositionStatusReport]] = {}
+
+        self.calls: list[str] = []
+        self.commands: list[TradingCommand] = []
+
+    def connect(self) -> None:
+        pass  # Do nothing
+
+    def disconnect(self) -> None:
+        pass  # Do nothing
+
+    def add_order_status_report(self, report: OrderStatusReport) -> None:
+        self._order_status_reports[report.venue_order_id] = report
+
+    def add_fill_reports(self, venue_order_id: VenueOrderId, trades: list[FillReport]) -> None:
+        self._trades_reports[venue_order_id] = trades
+
+    def add_position_status_report(self, report: PositionStatusReport) -> None:
+        if report.instrument_id not in self._position_status_reports:
+            self._position_status_reports[report.instrument_id] = []
+        self._position_status_reports[report.instrument_id].append(report)
+
+    def dispose(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+    def reset(self) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+    # -- COMMANDS ---------------------------------------------------------------------------------
+
+    def account_inquiry(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def submit_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def submit_order_list(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def modify_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def cancel_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def cancel_all_orders(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def query_account(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    def query_order(self, command) -> None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+        self.commands.append(command)
+
+    # -- EXECUTION REPORTS ------------------------------------------------------------------------
+
+    async def generate_order_status_report(
+        self,
+        command: GenerateOrderStatusReport,
+    ) -> OrderStatusReport | None:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+        return self._order_status_reports.get(command.venue_order_id)
+
+    async def generate_order_status_reports(
+        self,
+        command: GenerateOrderStatusReports,
+    ) -> list[OrderStatusReport]:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+        reports = []
+        for report in self._order_status_reports.values():
+            reports.append(report)
+
+        if command.instrument_id is not None:
+            reports = [r for r in reports if r.instrument_id == command.instrument_id]
+
+        if command.start is not None:
+            start_ns = dt_to_unix_nanos(command.start)
+            reports = [r for r in reports if r.ts_accepted >= start_ns]
+
+        if command.end is not None:
+            end_ns = dt_to_unix_nanos(command.end)
+            reports = [r for r in reports if r.ts_accepted <= end_ns]
+
+        return reports
+
+    async def generate_fill_reports(
+        self,
+        command: GenerateFillReports,
+    ) -> list[FillReport]:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+        if command.venue_order_id is not None:
+            trades = self._trades_reports.get(command.venue_order_id, [])
+        else:
+            trades = []
+            for t_list in self._trades_reports.values():
+                trades = [*trades, *t_list]
+
+        if command.instrument_id is not None:
+            trades = [t for t in trades if t.instrument_id == command.instrument_id]
+
+        if command.start is not None:
+            start_ns = dt_to_unix_nanos(command.start)
+            trades = [t for t in trades if t.ts_event >= start_ns]
+
+        if command.end is not None:
+            end_ns = dt_to_unix_nanos(command.end)
+            trades = [t for t in trades if t.ts_event <= end_ns]
+
+        return trades
+
+    async def generate_position_status_reports(
+        self,
+        command: GeneratePositionStatusReports,
+    ) -> list[PositionStatusReport]:
+        current_frame = inspect.currentframe()
+        if current_frame:
+            self.calls.append(current_frame.f_code.co_name)
+
+        if command.instrument_id is not None:
+            reports = self._position_status_reports.get(command.instrument_id, [])
+        else:
+            reports = []
+            for p_list in self._position_status_reports.values():
+                reports = [*reports, *p_list]
+
+        if command.start is not None:
+            start_ns = dt_to_unix_nanos(command.start)
+            reports = [r for r in reports if r.ts_event >= start_ns]
+
+        if command.end is not None:
+            end_ns = dt_to_unix_nanos(command.end)
+            reports = [r for r in reports if r.ts_event <= end_ns]
+
+        return reports
+```
+
+
+---
+
+## Overview
+
+This file is located at `nautilus_trader/test_kit/mocks/exec_clients.py` within the repository.
+
+**Classes defined:** MockExecutionClient, MockLiveExecutionClient
+
+**Functions defined:** __init__, _start, _stop, _reset, _dispose, account_inquiry, submit_order, submit_order_list, modify_order, cancel_order and 17 more
+
+**Import statements:** 16
+
+
+---
+
+## Detailed Analysis
+
+### Classes
+
+#### `MockExecutionClient`
+
+**Inherits from:** ExecutionClient
+
+
+#### `MockLiveExecutionClient`
+
+**Inherits from:** LiveExecutionClient
+
+
+### Functions
+
+#### `__init__(
+        self,
+        client_id,
+        venue,
+        account_type,
+        base_currency,
+        msgbus,
+        cache,
+        clock,
+        config=None,
+    )`
+
+
+#### `_start(self)`
+
+
+#### `_stop(self)`
+
+
+#### `_reset(self)`
+
+
+#### `_dispose(self)`
+
+
+#### `account_inquiry(self, command)`
+
+
+#### `submit_order(self, command)`
+
+
+#### `submit_order_list(self, command)`
+
+
+#### `modify_order(self, command)`
+
+
+#### `cancel_order(self, command)`
+
+
+#### `cancel_all_orders(self, command)`
+
+
+#### `__init__(
+        self,
+        loop,
+        client_id,
+        venue,
+        account_type,
+        base_currency,
+        instrument_provider,
+        msgbus,
+        cache,
+        clock,
+    )`
+
+
+#### `connect(self)`
+
+
+#### `disconnect(self)`
+
+
+#### `add_order_status_report(self, report: OrderStatusReport)`
+
+
+#### `add_fill_reports(self, venue_order_id: VenueOrderId, trades: list[FillReport])`
+
+
+#### `add_position_status_report(self, report: PositionStatusReport)`
+
+
+#### `dispose(self)`
+
+
+#### `reset(self)`
+
+
+#### `account_inquiry(self, command)`
+
+
+#### `submit_order(self, command)`
+
+
+#### `submit_order_list(self, command)`
+
+
+#### `modify_order(self, command)`
+
+
+#### `cancel_order(self, command)`
+
+
+#### `cancel_all_orders(self, command)`
+
+
+#### `query_account(self, command)`
+
+
+#### `query_order(self, command)`
+
+
+### Imports
+
+- `import inspect`
+- `from nautilus_trader.core.datetime import dt_to_unix_nanos`
+- `from nautilus_trader.execution.client import ExecutionClient`
+- `from nautilus_trader.execution.messages import GenerateFillReports`
+- `from nautilus_trader.execution.messages import GenerateOrderStatusReport`
+- `from nautilus_trader.execution.messages import GenerateOrderStatusReports`
+- `from nautilus_trader.execution.messages import GeneratePositionStatusReports`
+- `from nautilus_trader.execution.messages import TradingCommand`
+- `from nautilus_trader.execution.reports import FillReport`
+- `from nautilus_trader.execution.reports import OrderStatusReport`
+- `from nautilus_trader.execution.reports import PositionStatusReport`
+- `from nautilus_trader.live.execution_client import LiveExecutionClient`
+- `from nautilus_trader.model.enums import OmsType`
+- `from nautilus_trader.model.identifiers import AccountId`
+- `from nautilus_trader.model.identifiers import InstrumentId`
+- `from nautilus_trader.model.identifiers import VenueOrderId`
+
+
+---
+
+## Usage Examples
+
+### Importing
+
+```python
+from nautilus_trader.test_kit.mocks.exec_clients import MockExecutionClient
+```
+
+
+---
+
+## Related Files
+
+This file imports from the following modules:
+
+- `import inspect`
+- `from nautilus_trader.core.datetime import dt_to_unix_nanos`
+- `from nautilus_trader.execution.client import ExecutionClient`
+- `from nautilus_trader.execution.messages import GenerateFillReports`
+- `from nautilus_trader.execution.messages import GenerateOrderStatusReport`
+- `from nautilus_trader.execution.messages import GenerateOrderStatusReports`
+- `from nautilus_trader.execution.messages import GeneratePositionStatusReports`
+- `from nautilus_trader.execution.messages import TradingCommand`
+- `from nautilus_trader.execution.reports import FillReport`
+- `from nautilus_trader.execution.reports import OrderStatusReport`
+
+*... and 6 more*
+
+**Directory:** `nautilus_trader/test_kit/mocks`
+
+See [folder index](./index.md) for related files.
+
+
+---
+
+## Notes
+
+**Testing:** This appears to be a test file. Ensure it's run as part of the test suite.
+
+

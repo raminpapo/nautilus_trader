@@ -1,0 +1,1389 @@
+# Keywords: `crates/model/src/python/data/bar.rs`
+
+**Generated:** 2025-11-15T19:40:02.947659Z
+
+---
+
+## Keyword Index
+
+### A
+
+#### `AUDUSD`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `AggregationSource`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `All`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `aggregation`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `aggregation_source`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `as_u64`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `assert_eq`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `attach`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### B
+
+#### `Bar`
+
+- **Type:** identifier
+- **Occurrences:** 18
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `BarAggregation`
+
+- **Type:** identifier
+- **Occurrences:** 8
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `BarSpecification`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `BarType`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Bound`
+
+- **Type:** identifier
+- **Occurrences:** 8
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bar`
+
+- **Type:** identifier
+- **Occurrences:** 9
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bar_pyobject`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bar_type`
+
+- **Type:** identifier
+- **Occurrences:** 14
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bar_type_obj`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bar_type_str`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `bytes`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### C
+
+#### `CompareOp`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Copyright`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Creates`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `can`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `capsule`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `case`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `close`
+
+- **Type:** identifier
+- **Occurrences:** 16
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `close_py`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `close_raw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `compliance`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `composite`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `composite_aggregation`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `composite_aggregation_source`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `composite_step`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `copy`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `crate`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### D
+
+#### `Data`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `DefaultHasher`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `data`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `data_to_pycapsule`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `default`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `dict`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `dict_string`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `dictionary`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `distributed`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### E
+
+#### `encoded`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `expected_string`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `extract`
+
+- **Type:** identifier
+- **Occurrences:** 11
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### F
+
+#### `fails`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `file`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `finish`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `format`
+
+- **Type:** identifier
+- **Occurrences:** 7
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `from_dict_pyo3`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `from_pyobject`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `from_raw`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `from_str`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `fully_qualified_name`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `function`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### G
+
+#### `GNU`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `General`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `get_fields`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `get_metadata`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `getattr`
+
+- **Type:** identifier
+- **Occurrences:** 15
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `getter`
+
+- **Type:** identifier
+- **Occurrences:** 9
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `gnu`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### H
+
+#### `HashMap`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `hash`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `high`
+
+- **Type:** identifier
+- **Occurrences:** 19
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `high_py`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `high_raw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `html`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `https`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### I
+
+#### `INTERNAL`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `InstrumentId`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `IntoPyObjectNautilusExt`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `impl`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `initialize`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `instrument_id`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `into`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `into_py_any_unwrap`
+
+- **Type:** identifier
+- **Occurrences:** 9
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `is_composite`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `is_standard`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `isize`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### L
+
+#### `LAST`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Lesser`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `License`
+
+- **Type:** identifier
+- **Occurrences:** 7
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Licensed`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Ltd`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `let`
+
+- **Type:** identifier
+- **Occurrences:** 53
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `lgpl`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `licenses`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `low`
+
+- **Type:** identifier
+- **Occurrences:** 17
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `low_py`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `low_raw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### M
+
+#### `MINUTE`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `map_err`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `match`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `may`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `must`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `mut`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### N
+
+#### `Nautech`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `NotImplemented`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `name`
+
+- **Type:** identifier
+- **Occurrences:** 27
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `nautechsystems`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `nautilus_core`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `new`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `new_checked`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `new_composite`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### O
+
+#### `obj`
+
+- **Type:** identifier
+- **Occurrences:** 9
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `object`
+
+- **Type:** identifier
+- **Occurrences:** 11
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `obtain`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `open`
+
+- **Type:** identifier
+- **Occurrences:** 16
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `open_py`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `open_raw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `org`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `other`
+
+- **Type:** identifier
+- **Occurrences:** 9
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### P
+
+#### `PY_MODULE_MODEL`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Price`
+
+- **Type:** identifier
+- **Occurrences:** 22
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PriceRaw`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PriceType`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Pty`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Public`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PyAny`
+
+- **Type:** identifier
+- **Occurrences:** 13
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PyCapsule`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PyDict`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `PyResult`
+
+- **Type:** identifier
+- **Occurrences:** 11
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Python`
+
+- **Type:** identifier
+- **Occurrences:** 17
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `parsed`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `parsed_bar`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `pointer`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `precision`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `price_prec`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `price_precision`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `price_type`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_as_pycapsule`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_bar_type`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_close`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_composite`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_dict`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_from_dict`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_from_json`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_from_msgpack`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_from_str`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_fully_qualified_name`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_get_fields`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_get_metadata`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_high`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_is_composite`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_is_standard`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_low`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_new`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_new_composite`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_open`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_standard`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_timedelta`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_to_dict`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_to_json_bytes`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_to_msgpack_bytes`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_ts_event`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_ts_init`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `py_volume`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `pymethods`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `pyo3`
+
+- **Type:** identifier
+- **Occurrences:** 30
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `python`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### Q
+
+#### `Quantity`
+
+- **Type:** identifier
+- **Occurrences:** 7
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `QuantityRaw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### R
+
+#### `Returns`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `raw`
+
+- **Type:** identifier
+- **Occurrences:** 8
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `representation`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `reserved`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `result`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `rights`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `rstest`
+
+- **Type:** identifier
+- **Occurrences:** 7
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### S
+
+#### `SAFETY`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `SIM`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `String`
+
+- **Type:** identifier
+- **Occurrences:** 12
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Systems`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `safe`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `serialization`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `serializing`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `size_precision`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `spec`
+
+- **Type:** identifier
+- **Occurrences:** 5
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `standard`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `staticmethod`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `step`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `stringify`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### T
+
+#### `The`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `This`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `test_as_from_dict`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `test_bar_py_new`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `test_bar_py_new_invalid`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `test_from_pyobject`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `test_to_dict`
+
+- **Type:** function
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `the`
+
+- **Type:** identifier
+- **Occurrences:** 20
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `this`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `timedelta`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `to_dict_pyo3`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `to_json_bytes`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `to_msgpack_bytes`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `to_pyvalue_err`
+
+- **Type:** identifier
+- **Occurrences:** 7
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `to_string`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `ts_event`
+
+- **Type:** identifier
+- **Occurrences:** 12
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `ts_init`
+
+- **Type:** identifier
+- **Occurrences:** 12
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `type`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `types`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### U
+
+#### `Unless`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Unwrap`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `u64`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `under`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `unwrap`
+
+- **Type:** identifier
+- **Occurrences:** 6
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `use`
+
+- **Type:** identifier
+- **Occurrences:** 10
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `usize`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### V
+
+#### `Vec`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `Version`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `valid`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `value`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `values`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `volume`
+
+- **Type:** identifier
+- **Occurrences:** 12
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `volume_prec`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `volume_py`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `volume_raw`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### W
+
+#### `when`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `www`
+
+- **Type:** identifier
+- **Occurrences:** 1
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### Y
+
+#### `You`
+
+- **Type:** identifier
+- **Occurrences:** 2
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+### _
+
+#### `__hash__`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `__repr__`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `__richcmp__`
+
+- **Type:** identifier
+- **Occurrences:** 3
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+
+#### `__str__`
+
+- **Type:** identifier
+- **Occurrences:** 4
+- **Source:** [crates/model/src/python/data/bar.rs](./bar.rs_docs.md)
+

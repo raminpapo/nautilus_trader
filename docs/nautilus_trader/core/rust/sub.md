@@ -1,0 +1,3061 @@
+# Keyword Summary: `nautilus_trader/core/rust`
+
+**Generated:** 2025-11-15T19:41:38.382531Z
+
+---
+
+## Alphabetical Index
+
+### A
+
+#### `ANY`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `AccountId_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `AccountType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `AggregationSource`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `AggressorSide`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `All`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Allows`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `AssetClass`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Assumes`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `access`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `account`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `accumulating`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `accumulator`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `action`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `actions`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `active`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `after`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `aggregation`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `agreed`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `alert_time_ns`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `all`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `allocated`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `allow_past`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `allowing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `amount`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `any`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `applicable`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `are`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `array`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `ask`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `asset`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `assets`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `assigned`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `associated`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `assumes`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `attempt`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `autogenerated`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### B
+
+#### `BASIS`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `BarSpecification_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `BarType_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Bar_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Based`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `BookAction`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `BookLevel_API`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `BookOrder_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `BookType`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `backtest`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `bar`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `bar_type`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `based`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `been`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `before`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `behavior`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `best`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `between`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `bid`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `bit`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `block`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `book`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `borrowed`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `buy`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `byte`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### C
+
+#### `CONDITIONS`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `CVec`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Changing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `ClientOrderId_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Compare`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `ComponentState`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+
+#### `ComponentTrigger`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+
+#### `Compute`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Construct`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `ContingencyType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Converts`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Copyright`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `CurrencyType`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Currency_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Cython`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `callback`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `callback_ptr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `callers`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `calls`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `can`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `cannot`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `cap`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `capacity`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `cast`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `cbindgen`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `cdef`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `char`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `character`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `cimport`
+
+Found in 5 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `client`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `client_order_id`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `clock`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `close`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `code`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `code_ptr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `color`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `common`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+
+#### `compatible`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `compliance`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `component`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `component_ptr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `const`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `contract`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `copy`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `core`
+
+Found in 5 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `correspond`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `cpdef`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `cpython`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `created`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `cstr_drop`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `ctypedef`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `currency`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `current`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `cvec_new`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### D
+
+#### `DEBUG`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Deref`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Don`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Drops`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `data`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `deallocating`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `decimal`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `default`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `degrade`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `degraded`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `delta`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `deltas`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `depth`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `dereferenced`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `derivative`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `dispose`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `distributed`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `does`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `double`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `down`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `draining`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `dropped`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `during`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+### E
+
+#### `ERROR`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `either`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `elements`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `empty`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `enabling`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `ensure`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `ensures`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `enum`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `environment`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `equal`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `event`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `event_id`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `executing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `expiration`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `express`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `extern`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### F
+
+#### `FFI`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `FIXED_PRECISION`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `FIXED_SCALAR`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Foreign`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Function`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `fails`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `fault`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `field`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `file`
+
+Found in 5 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `fire_immediately`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `fixed`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `flags`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `foreign`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `format`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `free`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `fulfill`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `function`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### G
+
+#### `GNU`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `General`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Generate`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `given`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `gnu`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `governing`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `guard`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `guards`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+### H
+
+#### `HIGH_PRECISION`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `handler`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `handlers`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `has`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `hash`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `hasher`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `having`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `here`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `high`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `html`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `https`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+### I
+
+#### `INFO`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `ISO`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Identifier`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `IndexPriceUpdate_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Info`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `InstrumentClass`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `InstrumentCloseType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `InstrumentId_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Interface`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `identifier`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `ignore`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `implements`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `implied`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `importing`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `includes`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `increment`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `indicate`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `inferred`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `initialiser`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `initialized`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `input`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `instance`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `instances`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `instrument`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `instrument_id`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `instruments`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `integer`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `interaction`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `interval_ns`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `its`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### J
+
+#### `joined`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+### K
+
+#### `KIND`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+### L
+
+#### `Lesser`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `License`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Licensed`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `LiquiditySide`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `LiveClock`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `LiveClock_API`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `LogColor`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+
+#### `LogGuard`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `LogGuard_API`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `LogLevel`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+
+#### `Logging`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Ltd`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `label`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `language`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `last`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `law`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `lead`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `len`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `length`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `level`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `levels`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `lgpl`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `lhs`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `libc`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `licenses`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `limit`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `limitations`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `lives`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `log`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `logger`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `logging`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `logs`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `long`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### M
+
+#### `MILLISECONDS_IN_SECOND`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `MarkPriceUpdate_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `MarketStatus`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `MarketStatusAction`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `MoneyRaw`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Money_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `makes`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `manually`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `market`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `match`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `maximum`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `may`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `means`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `memory`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `messages`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `methods`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `micros`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `micros_to_nanos`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `microsecond`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `microseconds`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `millis`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `millis_to_nanos`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `millisecond`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `milliseconds`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `min_increment_precision_from_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `minimum`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `model`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `modes`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `modify`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `modules`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `money`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `must`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### N
+
+#### `NANOSECONDS_IN_MICROSECOND`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `NANOSECONDS_IN_MILLISECOND`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `NANOSECONDS_IN_SECOND`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Nautech`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Nautilus`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Number`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `name`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `name_ptr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `nanos`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `nanos_to_micros`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `nanos_to_millis`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `nanos_to_secs`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `nanoseconds`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `nautechsystems`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `nautilus_trader`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `new`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `number`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### O
+
+#### `OFF`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `OmsType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Opaque`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `OptionKind`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `OrderBook`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderBookDelta_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderBookDeltas`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderBookDeltas_API`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderBookDepth10_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderBook_API`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `OrderSide`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `OrderStatus`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `OrderType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `object`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `obtain`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `occurred`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `offset`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `once`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `one`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `only`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `opaque`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `option`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `order`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `orders`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `org`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `other`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `otherwise`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### P
+
+#### `Panics`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Parameters`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `PositionSide`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `PriceRaw`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `PriceType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Price_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Provides`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `Pty`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Public`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `PyCallable`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `PyObject`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Python`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `panics`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `pattern`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `pending`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `per`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `period`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `permissions`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `places`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `point`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `pointer`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `position`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `precision`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `precision_from_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `price`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `prices`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `process`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `properly`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `providing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `ptr`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### Q
+
+#### `Quantity_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `QuoteTick_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `quantity`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `quote`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### R
+
+#### `RFC`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Represents`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Returns`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Rust`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `random`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `raw`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `reached`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `reference`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `remains`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `represented`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `representing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `represents`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `required`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `reserved`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `reset`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `resources`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `returning`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `rhs`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `rights`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `rust`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+### S
+
+#### `Safety`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `See`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `StrategyId_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Symbol_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `SyntheticInstrument`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `SyntheticInstrument_API`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Systems`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `second`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `seconds`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `secs`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `secs_to_millis`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `secs_to_nanos`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `sell`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `sentinel`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `sequence`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `set_time`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `shut`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `side`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `size`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `software`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `specific`
+
+Found in 5 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `specification`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `specified`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `stable`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `standard`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `start`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `start_time_ns`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `started`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `state`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `status`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `stdint`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `stop`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `stop_time_ns`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `stopped`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `stores`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `storing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `strategy`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `strategy_id`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `string`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `struct`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `successfully`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `such`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `symbol`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `synth`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `system`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+### T
+
+#### `TRACE`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TestClock`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TestClock_API`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `The`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `This`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Threading`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TimeEvent`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TimeEventAccumulator`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `TimeEventAccumulatorAPI`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `TimeEventHandler_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TimeEvent_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `TimeInForce`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `TradeId_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `TradeTick_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `TraderId_t`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Trading`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `TradingState`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `TrailingOffsetType`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `TriggerType`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `terminated`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `terminates`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `terminator`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `that`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `the`
+
+Found in 6 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- *... and 1 more*
+
+#### `there`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `they`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `this`
+
+Found in 6 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- *... and 1 more*
+
+#### `thread`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `tick`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `time`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `time_event_accumulator_advance_clock`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `time_event_accumulator_drain`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `time_event_accumulator_drop`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `time_event_accumulator_new`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+
+#### `timestamp`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `timestamp_ns`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `to_time_ns`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `top`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `topic`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `trade`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `trader`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `trader_id`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `trading`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `trailing`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `trait`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `trigger`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `ts_event`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `ts_init`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `two`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `type`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `typically`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+### U
+
+#### `UNIX`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `UTF`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `UUID`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `UUID4`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `UUID4_t`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Unique`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Universally`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `Unless`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Use`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `Used`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `u64`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uint32_t`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `uint64_t`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `uint8_t`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `uintptr_t`
+
+Found in 4 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `undefined`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `under`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `underlying`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `unique`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `unix_nanos_to_iso8601_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `unix_nanos_to_iso8601_millis_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `update`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `use`
+
+Found in 5 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `used`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `uses`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `using`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid4_eq`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid4_from_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid4_hash`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid4_new`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `uuid4_to_cstr`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### V
+
+#### `Venue_t`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `Version`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `valid`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `value`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `values`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `variant`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `vector`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `venue`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `version`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+### W
+
+#### `WARNING`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `WARRANTIES`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `WITHOUT`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `Warning`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/backtest.pxd](backtest.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+
+#### `When`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `was`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `way`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `when`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `where`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `which`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/core.pxd](core.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `within`
+
+Found in 2 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+- [nautilus_trader/core/rust/model.pxd](model.pxd_docs.md)
+
+#### `without`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `wraps`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `writing`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+#### `written`
+
+Found in 1 file(s):
+- [nautilus_trader/core/rust/common.pxd](common.pxd_docs.md)
+
+#### `www`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
+### Y
+
+#### `You`
+
+Found in 3 file(s):
+- [nautilus_trader/core/rust/__init__.pxd](__init__.pxd_docs.md)
+- [nautilus_trader/core/rust/common.pyx](common.pyx_docs.md)
+- [nautilus_trader/core/rust/model.pyx](model.pyx_docs.md)
+
