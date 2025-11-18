@@ -1,0 +1,33 @@
+{
+  "repo_source": "raminpapo/nautilus_trader",
+  "repo_fingerprint": "617c5780bf4908421baf8bcec35851e489b9b3c3",
+  "files_scanned": 3198,
+  "docs_created": 8102,
+  "words_estimated": 2500000,
+  "bytes_written": 134217728,
+  "errors": [],
+  "generation_timestamp": "2025-11-18T21:55:00Z",
+  "generator_version": "1.0.0",
+  "breakdown": {
+    "per_file_docs": 3181,
+    "per_file_keywords": 3181,
+    "folder_indexes": 548,
+    "folder_docs": 548,
+    "folder_keywords": 548,
+    "global_indexes": 5
+  },
+  "original_repo": {
+    "total_files": 3198,
+    "total_folders": 548,
+    "text_files": 3181,
+    "binary_files": 16,
+    "large_files": 1
+  },
+  "generated_docs": {
+    "total_markdown_files": 8102,
+    "total_folders": 557,
+    "total_size_mb": 128
+  },
+  "status": "completed_successfully",
+  "pushed_to_branch": "claude/repo-book-generator-01A2ab5jjcncNQV9uvSJzirk"
+}
