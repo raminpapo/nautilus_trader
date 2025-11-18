@@ -1,0 +1,160 @@
+# Documentation: config.py
+
+## File Metadata
+
+- **Path**: `nautilus_trader/adapters/dydx/config.py`
+- **Size**: 4,342 bytes
+- **Lines**: 103
+- **Language**: Python
+
+## Original Source
+
+```python
+# -------------------------------------------------------------------------------------------------
+#  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+#  https://nautechsystems.io
+#
+#  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+#  You may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+# -------------------------------------------------------------------------------------------------
+"""
+Define the dYdX configuration classes.
+"""
+
+from nautilus_trader.config import LiveDataClientConfig
+from nautilus_trader.config import LiveExecClientConfig
+from nautilus_trader.config import PositiveInt
+
+
+class DYDXDataClientConfig(LiveDataClientConfig, frozen=True):
+    """
+    Configuration for ``DYDXDataClient`` instances.
+
+    Parameters
+    ----------
+    wallet_address : str, optional
+        The dYdX wallet address.
+        If ``None`` then will source `DYDX_WALLET_ADDRESS` or
+        `DYDX_TESTNET_WALLET_ADDRESS` environment variables.
+    testnet : bool, default False
+        If the client is connecting to the dYdX testnet API.
+    update_instruments_interval_mins : PositiveInt or None, default 60
+        The interval (minutes) between reloading instruments from the venue.
+    max_retries : PositiveInt, optional
+        The maximum number of retries for HTTP retries or websocket reconnects.
+    retry_delay_initial_ms : PositiveInt, optional
+        The initial delay (milliseconds) between retries. Short delays with frequent retries may result in account bans.
+    retry_delay_max_ms : PositiveInt, optional
+        The maximum delay (milliseconds) between retries.
+    proxy_url : str, optional
+        The proxy URL for HTTP requests.
+
+    """
+
+    wallet_address: str | None = None
+    is_testnet: bool = False
+    update_instruments_interval_mins: PositiveInt | None = 60
+    max_retries: PositiveInt | None = None
+    retry_delay_initial_ms: PositiveInt | None = None
+    retry_delay_max_ms: PositiveInt | None = None
+    proxy_url: str | None = None
+
+
+class DYDXExecClientConfig(LiveExecClientConfig, frozen=True):
+    """
+    Configuration for ``DYDXExecutionClient`` instances.
+
+    Parameters
+    ----------
+    wallet_address : str, optional
+        The dYdX wallet address.
+        If ``None`` then will source `DYDX_WALLET_ADDRESS` or
+        `DYDX_TESTNET_WALLET_ADDRESS` environment variables.
+    subaccount : int, optional
+        The subaccount number.
+        The venue creates subaccount 0 by default.
+    mnemonic : str, optional
+        The mnemonic string which is used to generate the private key.
+        The private key is used to sign transactions like submitting orders.
+        If ``None`` then will source `DYDX_MNEMONIC` or
+        `DYDX_TESTNET_MNEMONIC` environment variables.
+    base_url_http : str, optional
+        The HTTP client custom endpoint override.
+    base_url_ws : str, optional
+        The WebSocket client custom endpoint override.
+    is_testnet : bool, default False
+        If the client is connecting to the dYdX testnet API.
+    max_retries : PositiveInt, optional
+        The maximum number of times a submit, cancel or modify order request will be retried.
+    retry_delay_initial_ms : PositiveInt, optional
+        The initial delay (milliseconds) between retries. Short delays with frequent retries may result in account bans.
+    retry_delay_max_ms : PositiveInt, optional
+        The maximum delay (milliseconds) between retries.
+    proxy_url : str, optional
+        The proxy URL for HTTP requests.
+
+    """
+
+    wallet_address: str | None = None
+    subaccount: int = 0
+    mnemonic: str | None = None
+    base_url_http: str | None = None
+    base_url_ws: str | None = None
+    is_testnet: bool = False
+    max_retries: PositiveInt | None = None
+    retry_delay_initial_ms: PositiveInt | None = None
+    retry_delay_max_ms: PositiveInt | None = None
+    proxy_url: str | None = None
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. 2 class(es).
+
+## Detailed Walkthrough
+
+
+### Classes
+- **`DYDXDataClientConfig`**: Class defined in this file
+- **`DYDXExecClientConfig`**: Class defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 3
+
+
+**Classs**: `DYDXDataClientConfig`, `DYDXExecClientConfig`
+**Imports**: `nautilus_trader.config`
+
+## Related Files
+
+This file is located in `nautilus_trader/adapters/dydx/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:04.716953Z*

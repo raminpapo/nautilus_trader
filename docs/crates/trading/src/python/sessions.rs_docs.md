@@ -1,0 +1,242 @@
+# Documentation: sessions.rs
+
+## File Metadata
+
+- **Path**: `crates/trading/src/python/sessions.rs`
+- **Size**: 5,661 bytes
+- **Lines**: 171
+- **Language**: Rust
+
+## Original Source
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+use std::str::FromStr;
+
+use chrono::{DateTime, Utc};
+use nautilus_core::python::to_pyvalue_err;
+use nautilus_model::python::common::EnumIterator;
+use pyo3::{PyTypeInfo, prelude::*, types::PyType};
+
+use crate::sessions::{
+    ForexSession, fx_local_from_utc, fx_next_end, fx_next_start, fx_prev_end, fx_prev_start,
+};
+
+#[pymethods]
+impl ForexSession {
+    #[new]
+    fn py_new(py: Python<'_>, value: &Bound<'_, PyAny>) -> PyResult<Self> {
+        let t = Self::type_object(py);
+        Self::py_from_str(&t, value)
+    }
+
+    const fn __hash__(&self) -> isize {
+        *self as isize
+    }
+
+    fn __repr__(&self) -> String {
+        format!(
+            "<{}.{}: '{}'>",
+            stringify!(PositionSide),
+            self.name(),
+            self.value(),
+        )
+    }
+
+    fn __str__(&self) -> String {
+        self.to_string()
+    }
+
+    #[getter]
+    #[must_use]
+    pub fn name(&self) -> String {
+        self.to_string()
+    }
+
+    #[getter]
+    #[must_use]
+    pub const fn value(&self) -> u8 {
+        *self as u8
+    }
+
+    #[classmethod]
+    fn variants(_: &Bound<'_, PyType>, py: Python<'_>) -> EnumIterator {
+        EnumIterator::new::<Self>(py)
+    }
+
+    #[classmethod]
+    #[pyo3(name = "from_str")]
+    fn py_from_str(_: &Bound<'_, PyType>, data: &Bound<'_, PyAny>) -> PyResult<Self> {
+        let data_str: &str = data.extract()?;
+        let tokenized = data_str.to_uppercase();
+        Self::from_str(&tokenized).map_err(to_pyvalue_err)
+    }
+
+    #[classattr]
+    #[pyo3(name = "SYDNEY")]
+    const fn py_no_position_side() -> Self {
+        Self::Sydney
+    }
+
+    #[classattr]
+    #[pyo3(name = "TOKYO")]
+    const fn py_flat() -> Self {
+        Self::Tokyo
+    }
+
+    #[classattr]
+    #[pyo3(name = "LONDON")]
+    const fn py_long() -> Self {
+        Self::London
+    }
+
+    #[classattr]
+    #[pyo3(name = "NEW_YORK")]
+    const fn py_short() -> Self {
+        Self::NewYork
+    }
+}
+
+/// Converts a UTC timestamp to the local time for the given Forex session.
+///
+/// The `time_now` must be timezone-aware with its tzinfo set to a built-in `datetime.timezone`
+/// (e.g. `datetime.timezone.utc`). Third-party tzinfo objects (like those from `pytz`) are not supported.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if an error occurs during session conversion or value conversion to Python.
+#[pyfunction]
+#[pyo3(name = "fx_local_from_utc")]
+pub fn py_fx_local_from_utc(session: ForexSession, time_now: DateTime<Utc>) -> PyResult<String> {
+    Ok(fx_local_from_utc(session, time_now).to_rfc3339())
+}
+
+/// Returns the next session start time in UTC.
+///
+/// The `time_now` must be timezone-aware with its tzinfo set to a built-in `datetime.timezone`
+/// (e.g. `datetime.timezone.utc`). Third-party tzinfo objects (like those from `pytz`) are not supported.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if an error occurs during session conversion or value conversion to Python.
+#[pyfunction]
+#[pyo3(name = "fx_next_start")]
+pub fn py_fx_next_start(session: ForexSession, time_now: DateTime<Utc>) -> PyResult<DateTime<Utc>> {
+    Ok(fx_next_start(session, time_now))
+}
+
+/// Returns the next session end time in UTC.
+///
+/// The `time_now` must be timezone-aware with its tzinfo set to a built-in `datetime.timezone`
+/// (e.g. `datetime.timezone.utc`). Third-party tzinfo objects (like those from `pytz`) are not supported.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if an error occurs during session conversion or value conversion to Python.
+#[pyfunction]
+#[pyo3(name = "fx_next_end")]
+pub fn py_fx_next_end(session: ForexSession, time_now: DateTime<Utc>) -> PyResult<DateTime<Utc>> {
+    Ok(fx_next_end(session, time_now))
+}
+
+/// Returns the previous session start time in UTC.
+///
+/// The `time_now` must be timezone-aware with its tzinfo set to a built-in `datetime.timezone`
+/// (e.g. `datetime.timezone.utc`). Third-party tzinfo objects (like those from `pytz`) are not supported.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if an error occurs during session conversion or value conversion to Python.
+#[pyfunction]
+#[pyo3(name = "fx_prev_start")]
+pub fn py_fx_prev_start(session: ForexSession, time_now: DateTime<Utc>) -> PyResult<DateTime<Utc>> {
+    Ok(fx_prev_start(session, time_now))
+}
+
+/// Returns the previous session end time in UTC.
+///
+/// The `time_now` must be timezone-aware with its tzinfo set to a built-in `datetime.timezone`
+/// (e.g. `datetime.timezone.utc`). Third-party tzinfo objects (like those from `pytz`) are not supported.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if an error occurs during session conversion or value conversion to Python.
+#[pyfunction]
+#[pyo3(name = "fx_prev_end")]
+pub fn py_fx_prev_end(session: ForexSession, time_now: DateTime<Utc>) -> PyResult<DateTime<Utc>> {
+    Ok(fx_prev_end(session, time_now))
+}
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. It defines 17 function(s).
+
+## Detailed Walkthrough
+
+### Functions
+- **`py_new()`**: Function defined in this file
+- **`__hash__()`**: Function defined in this file
+- **`__repr__()`**: Function defined in this file
+- **`__str__()`**: Function defined in this file
+- **`name()`**: Function defined in this file
+- **`value()`**: Function defined in this file
+- **`variants()`**: Function defined in this file
+- **`py_from_str()`**: Function defined in this file
+- **`py_no_position_side()`**: Function defined in this file
+- **`py_flat()`**: Function defined in this file
+- **`py_long()`**: Function defined in this file
+- **`py_short()`**: Function defined in this file
+- **`py_fx_local_from_utc()`**: Function defined in this file
+- **`py_fx_next_start()`**: Function defined in this file
+- **`py_fx_next_end()`**: Function defined in this file
+- **`py_fx_prev_start()`**: Function defined in this file
+- **`py_fx_prev_end()`**: Function defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 18
+
+
+**Functions**: `__hash__`, `__repr__`, `__str__`, `name`, `py_flat`, `py_from_str`, `py_fx_local_from_utc`, `py_fx_next_end`, `py_fx_next_start`, `py_fx_prev_end`, `py_fx_prev_start`, `py_long`, `py_new`, `py_no_position_side`, `py_short`, `value`, `variants`
+**Impls**: `ForexSession`
+
+## Related Files
+
+This file is located in `crates/trading/src/python/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:04.195901Z*

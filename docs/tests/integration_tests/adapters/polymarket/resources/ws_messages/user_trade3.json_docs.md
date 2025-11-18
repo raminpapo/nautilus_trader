@@ -1,0 +1,92 @@
+# Documentation: user_trade3.json
+
+## File Metadata
+
+- **Path**: `tests/integration_tests/adapters/polymarket/resources/ws_messages/user_trade3.json`
+- **Size**: 1,353 bytes
+- **Lines**: 36
+- **Language**: JSON
+
+## Original Source
+
+```json
+{
+  "asset_id": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+  "bucket_index": 0,
+  "event_type": "trade",
+  "fee_rate_bps": "0",
+  "id": "83b5c849-620e-4c23-b63b-2e779c04a6e7",
+  "last_update": "1762776436",
+  "maker_address": "0xAeAF6c1016DE43aD358c1831bD13d78eD545266B",
+  "maker_orders": [
+    {
+      "order_id": "0x3ad09f225ebe141dfbdb3824f31cb457e8e0301ca4e0a06311e543f5328b9dea",
+      "owner": "a93a3d32-74fa-dd2b-4b67-98bfa6fc5cb5",
+      "maker_address": "0xa3D82Ed56F4c68d2328Fb8c29e568Ba2cAF7d7c8",
+      "matched_amount": "5",
+      "price": "0.513",
+      "fee_rate_bps": "0",
+      "asset_id": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+      "outcome": "Yes",
+      "side": "BUY"
+    }
+  ],
+  "market": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+  "match_time": "1762776367",
+  "outcome": "No",
+  "owner": "5c4e8a20-1298-5fd5-ef96-2c29032ba30f",
+  "price": "0.49",
+  "side": "BUY",
+  "size": "5",
+  "status": "CONFIRMED",
+  "taker_order_id": "0xba376c92a652f7249cf07e2fb6daaf155c675f49985553bda91c6632747b111d",
+  "timestamp": "1762776436",
+  "trade_owner": "092dab0c-74fa-5ba7-4b67-572daeace198",
+  "trader_side": "MAKER",
+  "transaction_hash": "0x16527181ac3c2dfb8ab81457aadc40cd9671a2b5f54f511a35b3d60736fb32e3",
+  "type": "TRADE"
+}
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. This is a JSON data file.
+
+## Detailed Walkthrough
+
+This file contains implementation details. See the source code above for complete information.
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 5
+
+
+**Identifiers**: `BUY`, `CONFIRMED`, `MAKER`, `TRADE`, `Yes`
+
+## Related Files
+
+This file is located in `tests/integration_tests/adapters/polymarket/resources/ws_messages/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+This appears to be a test file. Run tests using:
+```bash
+# For Python
+pytest tests/integration_tests/adapters/polymarket/resources/ws_messages/user_trade3.json
+
+# For Rust
+cargo test --package <package-name>
+```
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:07.151783Z*

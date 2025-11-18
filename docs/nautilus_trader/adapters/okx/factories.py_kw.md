@@ -1,0 +1,108 @@
+# Keywords: factories.py
+
+## File Path
+`nautilus_trader/adapters/okx/factories.py`
+
+## Keyword Index
+
+Total unique keywords: 16
+
+### OKXLiveDataClientFactory
+
+- **Type**: class
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Class identifier defined or used in this file
+
+### OKXLiveExecClientFactory
+
+- **Type**: class
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Class identifier defined or used in this file
+
+### asyncio
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### functools
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### get_cached_okx_http_client
+
+- **Type**: function
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### get_cached_okx_instrument_provider
+
+- **Type**: function
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### nautilus_trader.adapters.okx.config
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.adapters.okx.data
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.adapters.okx.execution
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.adapters.okx.providers
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.cache.cache
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.common.component
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.config
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.core
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.core.nautilus_pyo3
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.live.factories
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/okx/factories.py](../factories.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:04.918780Z*

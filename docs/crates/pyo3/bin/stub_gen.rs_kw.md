@@ -1,0 +1,18 @@
+# Keywords: stub_gen.rs
+
+## File Path
+`crates/pyo3/bin/stub_gen.rs`
+
+## Keyword Index
+
+Total unique keywords: 1
+
+### main
+
+- **Type**: function
+- **File**: [crates/pyo3/bin/stub_gen.rs](../stub_gen.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:03.626645Z*

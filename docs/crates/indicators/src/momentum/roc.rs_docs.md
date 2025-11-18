@@ -1,0 +1,246 @@
+# Documentation: roc.rs
+
+## File Metadata
+
+- **Path**: `crates/indicators/src/momentum/roc.rs`
+- **Size**: 4,881 bytes
+- **Lines**: 174
+- **Language**: Rust
+
+## Original Source
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+use std::fmt::Display;
+
+use arraydeque::{ArrayDeque, Wrapping};
+use nautilus_model::data::Bar;
+
+use crate::indicator::Indicator;
+
+const MAX_PERIOD: usize = 1_024;
+
+#[repr(C)]
+#[derive(Debug)]
+#[cfg_attr(
+    feature = "python",
+    pyo3::pyclass(module = "nautilus_trader.core.nautilus_pyo3.indicators")
+)]
+pub struct RateOfChange {
+    pub period: usize,
+    pub use_log: bool,
+    pub value: f64,
+    pub initialized: bool,
+    has_inputs: bool,
+    prices: ArrayDeque<f64, MAX_PERIOD, Wrapping>,
+}
+
+impl Display for RateOfChange {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{}({})", self.name(), self.period)
+    }
+}
+
+impl Indicator for RateOfChange {
+    fn name(&self) -> String {
+        stringify!(RateOfChange).to_string()
+    }
+
+    fn has_inputs(&self) -> bool {
+        self.has_inputs
+    }
+
+    fn initialized(&self) -> bool {
+        self.initialized
+    }
+
+    fn handle_bar(&mut self, bar: &Bar) {
+        self.update_raw((&bar.close).into());
+    }
+
+    fn reset(&mut self) {
+        self.prices.clear();
+        self.value = 0.0;
+        self.has_inputs = false;
+        self.initialized = false;
+    }
+}
+
+impl RateOfChange {
+    /// Creates a new [`RateOfChange`] instance.
+    ///
+    /// # Panics
+    ///
+    /// This function panics if:
+    /// - `period` is greater than `MAX_PERIOD`.
+    #[must_use]
+    pub fn new(period: usize, use_log: Option<bool>) -> Self {
+        assert!(
+            period <= MAX_PERIOD,
+            "RateOfChange: period {period} exceeds MAX_PERIOD ({MAX_PERIOD})"
+        );
+
+        Self {
+            period,
+            use_log: use_log.unwrap_or(false),
+            value: 0.0,
+            prices: ArrayDeque::new(),
+            has_inputs: false,
+            initialized: false,
+        }
+    }
+
+    pub fn update_raw(&mut self, price: f64) {
+        let _ = self.prices.push_back(price);
+
+        if !self.initialized {
+            self.has_inputs = true;
+            if self.prices.len() >= self.period {
+                self.initialized = true;
+            }
+        }
+
+        if let Some(first) = self.prices.front() {
+            if self.use_log {
+                self.value = (price / first).log10();
+            } else {
+                self.value = (price - first) / first;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Tests
+////////////////////////////////////////////////////////////////////////////////
+#[cfg(test)]
+mod tests {
+    use rstest::rstest;
+
+    use super::*;
+    use crate::stubs::roc_10;
+
+    #[rstest]
+    fn test_name_returns_expected_string(roc_10: RateOfChange) {
+        assert_eq!(roc_10.name(), "RateOfChange");
+    }
+
+    #[rstest]
+    fn test_str_repr_returns_expected_string(roc_10: RateOfChange) {
+        assert_eq!(format!("{roc_10}"), "RateOfChange(10)");
+    }
+
+    #[rstest]
+    fn test_period_returns_expected_value(roc_10: RateOfChange) {
+        assert_eq!(roc_10.period, 10);
+        assert!(roc_10.use_log);
+    }
+
+    #[rstest]
+    fn test_initialized_without_inputs_returns_false(roc_10: RateOfChange) {
+        assert!(!roc_10.initialized());
+    }
+
+    #[rstest]
+    fn test_value_with_all_higher_inputs_returns_expected_value(mut roc_10: RateOfChange) {
+        let close_values = [
+            0.95, 1.95, 2.95, 3.95, 4.95, 5.95, 6.95, 7.95, 8.95, 9.95, 10.05, 10.15, 10.25, 11.05,
+            11.45,
+        ];
+
+        for close in &close_values {
+            roc_10.update_raw(*close);
+        }
+
+        assert!(roc_10.initialized());
+        assert_eq!(roc_10.value, 1.081_081_881_387_059);
+    }
+
+    #[rstest]
+    fn test_reset_successfully_returns_indicator_to_fresh_state(mut roc_10: RateOfChange) {
+        roc_10.update_raw(1.00020);
+        roc_10.update_raw(1.00030);
+        roc_10.update_raw(1.00070);
+
+        roc_10.reset();
+
+        assert!(!roc_10.initialized());
+        assert!(!roc_10.has_inputs);
+        assert_eq!(roc_10.value, 0.0);
+    }
+}
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. It defines 14 function(s) and 1 class(es).
+
+## Detailed Walkthrough
+
+### Functions
+- **`fmt()`**: Function defined in this file
+- **`name()`**: Function defined in this file
+- **`has_inputs()`**: Function defined in this file
+- **`initialized()`**: Function defined in this file
+- **`handle_bar()`**: Function defined in this file
+- **`reset()`**: Function defined in this file
+- **`new()`**: Function defined in this file
+- **`update_raw()`**: Function defined in this file
+- **`test_name_returns_expected_string()`**: Function defined in this file
+- **`test_str_repr_returns_expected_string()`**: Function defined in this file
+- **`test_period_returns_expected_value()`**: Function defined in this file
+- **`test_initialized_without_inputs_returns_false()`**: Function defined in this file
+- **`test_value_with_all_higher_inputs_returns_expected_value()`**: Function defined in this file
+- **`test_reset_successfully_returns_indicator_to_fresh_state()`**: Function defined in this file
+
+### Classes
+- **`RateOfChange`**: Class defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 17
+
+
+**Functions**: `fmt`, `handle_bar`, `has_inputs`, `initialized`, `name`, `new`, `reset`, `test_initialized_without_inputs_returns_false`, `test_name_returns_expected_string`, `test_period_returns_expected_value`, `test_reset_successfully_returns_indicator_to_fresh_state`, `test_str_repr_returns_expected_string`, `test_value_with_all_higher_inputs_returns_expected_value`, `update_raw`
+**Impls**: `Display`, `Indicator`, `RateOfChange`
+**Structs**: `RateOfChange`
+
+## Related Files
+
+This file is located in `crates/indicators/src/momentum/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:01.840009Z*

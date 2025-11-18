@@ -1,0 +1,163 @@
+# Documentation: Cargo.toml
+
+## File Metadata
+
+- **Path**: `crates/pyo3/Cargo.toml`
+- **Size**: 3,784 bytes
+- **Lines**: 109
+- **Language**: TOML
+
+## Original Source
+
+```toml
+[package]
+name = "nautilus-pyo3"
+readme = "README.md"
+publish = false # Do not publish to crates.io
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Python bindings for the Nautilus trading engine"
+categories.workspace = true
+keywords.workspace = true
+documentation.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[lints]
+workspace = true
+
+[lib]
+name = "nautilus_pyo3"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+cython-compat = []
+defi = ["dep:nautilus-blockchain", "nautilus-blockchain/python"]
+extension-module = [
+  "nautilus-analysis/extension-module",
+  "nautilus-bitmex/extension-module",
+  "nautilus-blockchain?/extension-module",
+  "nautilus-bybit/extension-module",
+  "nautilus-coinbase-intx/extension-module",
+  "nautilus-common/extension-module",
+  "nautilus-core/extension-module",
+  "nautilus-cryptography/extension-module",
+  "nautilus-databento/extension-module",
+  "nautilus-dydx/extension-module",
+  "nautilus-execution/extension-module",
+  "nautilus-hyperliquid/extension-module",
+  "nautilus-indicators/extension-module",
+  "nautilus-kraken/extension-module",
+  "nautilus-infrastructure/extension-module",
+  "nautilus-live/extension-module",
+  "nautilus-model/extension-module",
+  "nautilus-okx/extension-module",
+  "nautilus-persistence/extension-module",
+  "nautilus-serialization/extension-module",
+  "nautilus-tardis/extension-module",
+  "nautilus-testkit/extension-module",
+  "nautilus-trading/extension-module",
+  "pyo3/extension-module",
+]
+ffi = [
+  "nautilus-common/ffi",
+  "nautilus-core/ffi",
+  "nautilus-model/ffi",
+  "nautilus-persistence/ffi",
+]
+high-precision = [
+  "nautilus-model/high-precision",
+  "nautilus-serialization/high-precision",
+]
+hypersync = ["nautilus-blockchain/hypersync"]
+postgres = ["nautilus-infrastructure/postgres"]
+redis = ["nautilus-infrastructure/redis"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+nautilus-analysis = { workspace = true, features = ["python"] }
+nautilus-common = { workspace = true, features = ["python"] }
+nautilus-core = { workspace = true, features = ["python"] }
+nautilus-cryptography = { workspace = true, features = ["python"] }
+nautilus-execution = { workspace = true, features = ["python"] }
+nautilus-indicators = { workspace = true, features = ["python"] }
+nautilus-infrastructure = { workspace = true, features = ["python"] }
+nautilus-live = { workspace = true, features = ["python"] }
+nautilus-model = { workspace = true, features = ["python"] }
+nautilus-network = { workspace = true, features = ["python"] }
+nautilus-persistence = { workspace = true, features = ["python"] }
+nautilus-serialization = { workspace = true, features = ["python"] }
+nautilus-testkit = { workspace = true, features = ["python"] }
+nautilus-trading = { workspace = true, features = ["python"] }
+
+# Adapters
+nautilus-bitmex = { workspace = true, features = ["python"] }
+nautilus-blockchain = { workspace = true, features = [
+  "python",
+], optional = true }
+nautilus-bybit = { workspace = true, features = ["python"] }
+nautilus-coinbase-intx = { workspace = true, features = ["python"] }
+nautilus-databento = { workspace = true, features = ["python"] }
+nautilus-dydx = { workspace = true, features = ["python"] }
+nautilus-hyperliquid = { workspace = true, features = ["python"] }
+nautilus-kraken = { workspace = true, features = ["python"] }
+nautilus-okx = { workspace = true, features = ["python"] }
+nautilus-tardis = { workspace = true, features = ["python"] }
+
+pyo3 = { workspace = true }
+pyo3-stub-gen = { workspace = true }
+
+# Run with `cargo run --bin python-stub-gen`
+[[bin]]
+name = "python-stub-gen"
+path = "bin/stub_gen.rs"
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. This is a TOML configuration file.
+
+## Detailed Walkthrough
+
+This file contains implementation details. See the source code above for complete information.
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 51
+
+
+**Keys**: `all-features`, `crate-type`, `cython-compat`, `default`, `defi`, `description`, `extension-module`, `ffi`, `high-precision`, `hypersync`, `name`, `nautilus-analysis`, `nautilus-bitmex`, `nautilus-blockchain`, `nautilus-bybit`, `nautilus-coinbase-intx`, `nautilus-common`, `nautilus-core`, `nautilus-cryptography`, `nautilus-databento`, `nautilus-dydx`, `nautilus-execution`, `nautilus-hyperliquid`, `nautilus-indicators`, `nautilus-infrastructure`, `nautilus-kraken`, `nautilus-live`, `nautilus-model`, `nautilus-network`, `nautilus-okx` *(+14 more)*
+**Sections**: `[bin`, `dependencies`, `features`, `lib`, `lints`, `package`, `package.metadata.docs.rs`
+
+## Related Files
+
+This file is located in `crates/pyo3/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:03.623921Z*

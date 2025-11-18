@@ -1,0 +1,185 @@
+# Documentation: mod.rs
+
+## File Metadata
+
+- **Path**: `crates/network/src/python/mod.rs`
+- **Size**: 4,513 bytes
+- **Lines**: 127
+- **Language**: Rust
+
+## Original Source
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+//! Python bindings from [PyO3](https://pyo3.rs).
+
+// We need to allow `unexpected_cfgs` because the PyO3 macros internally check for
+// the `gil-refs` feature. We don’t define or enable `gil-refs` ourselves (due to a
+// memory leak), so the compiler raises an error about an unknown cfg feature.
+// This attribute prevents those errors without actually enabling `gil-refs`.
+#![allow(unexpected_cfgs)]
+
+pub mod http;
+pub mod socket;
+pub mod websocket;
+
+use std::num::NonZeroU32;
+
+use pyo3::{exceptions::PyException, prelude::*};
+
+use crate::{
+    python::{
+        http::{HttpClientBuildError, HttpError, HttpInvalidProxyError, HttpTimeoutError},
+        websocket::WebSocketClientError,
+    },
+    ratelimiter::quota::Quota,
+};
+
+#[pymethods]
+impl Quota {
+    /// Construct a quota for a number of requests per second.
+    ///
+    /// # Errors
+    ///
+    /// Returns a `PyErr` if the max burst capacity is 0
+    #[staticmethod]
+    pub fn rate_per_second(max_burst: u32) -> PyResult<Self> {
+        match NonZeroU32::new(max_burst) {
+            Some(max_burst) => Ok(Self::per_second(max_burst)),
+            None => Err(PyErr::new::<PyException, _>(
+                "Max burst capacity should be a non-zero integer",
+            )),
+        }
+    }
+
+    /// Construct a quota for a number of requests per minute.
+    ///
+    /// # Errors
+    ///
+    /// Returns a `PyErr` if the max burst capacity is 0
+    #[staticmethod]
+    pub fn rate_per_minute(max_burst: u32) -> PyResult<Self> {
+        match NonZeroU32::new(max_burst) {
+            Some(max_burst) => Ok(Self::per_minute(max_burst)),
+            None => Err(PyErr::new::<PyException, _>(
+                "Max burst capacity should be a non-zero integer",
+            )),
+        }
+    }
+
+    /// Construct a quota for a number of requests per hour.
+    ///
+    /// # Errors
+    ///
+    /// Returns a `PyErr` if the max burst capacity is 0
+    #[staticmethod]
+    pub fn rate_per_hour(max_burst: u32) -> PyResult<Self> {
+        match NonZeroU32::new(max_burst) {
+            Some(max_burst) => Ok(Self::per_hour(max_burst)),
+            None => Err(PyErr::new::<PyException, _>(
+                "Max burst capacity should be a non-zero integer",
+            )),
+        }
+    }
+}
+
+/// Loaded as `nautilus_pyo3.network`.
+///
+/// # Errors
+///
+/// Returns a `PyErr` if registering any module components fails.
+#[pymodule]
+pub fn network(_py: Python<'_>, m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_class::<crate::http::HttpClient>()?;
+    m.add_class::<crate::http::HttpMethod>()?;
+    m.add_class::<crate::http::HttpResponse>()?;
+    m.add_class::<crate::ratelimiter::quota::Quota>()?;
+    m.add_class::<crate::websocket::WebSocketClient>()?;
+    m.add_class::<crate::websocket::WebSocketConfig>()?;
+    m.add_class::<crate::socket::SocketClient>()?;
+    m.add_class::<crate::socket::SocketConfig>()?;
+
+    m.add(
+        "WebSocketClientError",
+        m.py().get_type::<WebSocketClientError>(),
+    )?;
+    m.add("HttpError", m.py().get_type::<HttpError>())?;
+    m.add("HttpTimeoutError", m.py().get_type::<HttpTimeoutError>())?;
+    m.add(
+        "HttpInvalidProxyError",
+        m.py().get_type::<HttpInvalidProxyError>(),
+    )?;
+    m.add(
+        "HttpClientBuildError",
+        m.py().get_type::<HttpClientBuildError>(),
+    )?;
+
+    m.add_function(wrap_pyfunction!(http::http_get, m)?)?;
+    m.add_function(wrap_pyfunction!(http::http_post, m)?)?;
+    m.add_function(wrap_pyfunction!(http::http_patch, m)?)?;
+    m.add_function(wrap_pyfunction!(http::http_delete, m)?)?;
+    m.add_function(wrap_pyfunction!(http::http_download, m)?)?;
+
+    Ok(())
+}
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. It defines 4 function(s).
+
+## Detailed Walkthrough
+
+### Functions
+- **`rate_per_second()`**: Function defined in this file
+- **`rate_per_minute()`**: Function defined in this file
+- **`rate_per_hour()`**: Function defined in this file
+- **`network()`**: Function defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 5
+
+
+**Functions**: `network`, `rate_per_hour`, `rate_per_minute`, `rate_per_second`
+**Impls**: `Quota`
+
+## Related Files
+
+This file is located in `crates/network/src/python/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:03.368320Z*

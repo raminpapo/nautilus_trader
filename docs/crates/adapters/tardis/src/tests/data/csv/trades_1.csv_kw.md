@@ -1,0 +1,18 @@
+# Keywords: trades_1.csv
+
+## File Path
+`crates/adapters/tardis/src/tests/data/csv/trades_1.csv`
+
+## Keyword Index
+
+Total unique keywords: 1
+
+### XBTUSD
+
+- **Type**: identifier
+- **File**: [crates/adapters/tardis/src/tests/data/csv/trades_1.csv](../trades_1.csv_docs.md)
+- **Description**: Identifier identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:00.753638Z*

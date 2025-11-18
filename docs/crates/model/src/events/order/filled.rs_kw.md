@@ -1,0 +1,450 @@
+# Keywords: filled.rs
+
+## File Path
+`crates/model/src/events/order/filled.rs`
+
+## Keyword Index
+
+Total unique keywords: 73
+
+### Debug
+
+- **Type**: impl
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Impl identifier defined or used in this file
+
+### Default
+
+- **Type**: impl
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Impl identifier defined or used in this file
+
+### Display
+
+- **Type**: impl
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Impl identifier defined or used in this file
+
+### OrderEvent
+
+- **Type**: impl
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Impl identifier defined or used in this file
+
+### OrderFilled
+
+- **Type**: struct
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Struct identifier defined or used in this file
+
+### account_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### client_order_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### commission
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### contingency_type
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### create_test_order_filled
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### currency
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### default
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### display_qty
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### emulation_trigger
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### exec_algorithm_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### exec_spawn_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### expire_time
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### fmt
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### instrument_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### is_buy
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### is_sell
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### kind
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### last_px
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### last_qty
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### limit_offset
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### linked_order_ids
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### liquidity_side
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### new
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### order_list_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### order_side
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### order_type
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### parent_order_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### position_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### post_only
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### price
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### quantity
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### quote_quantity
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### reason
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### reconciliation
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### reduce_only
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### specified_side
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### strategy_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_clone
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_debug
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_default
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_different_currencies
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_different_liquidity_sides
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_different_order_types
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_different_prices_and_quantities
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_display
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_is_buy
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_is_sell
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_new
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_order_event_trait
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_partial_eq
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_serialization
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_specified_side
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_timestamps
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_with_reconciliation
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_without_commission
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### test_order_filled_without_position_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### time_in_force
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trade_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trader_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trailing_offset
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trailing_offset_type
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trigger_instrument_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trigger_price
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### trigger_type
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### ts_event
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### ts_init
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+### venue_order_id
+
+- **Type**: function
+- **File**: [crates/model/src/events/order/filled.rs](../filled.rs_docs.md)
+- **Description**: Function identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:02.483771Z*

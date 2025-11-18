@@ -1,0 +1,18 @@
+# Keywords: __init__.py
+
+## File Path
+`nautilus_trader/adapters/interactive_brokers/client/__init__.py`
+
+## Keyword Index
+
+Total unique keywords: 1
+
+### nautilus_trader.adapters.interactive_brokers.client.client
+
+- **Type**: import
+- **File**: [nautilus_trader/adapters/interactive_brokers/client/__init__.py](../__init__.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:04.806932Z*

@@ -1,0 +1,148 @@
+# Index: tests/integration_tests/adapters/binance/resources/http_responses
+
+## Folder Path
+`tests/integration_tests/adapters/binance/resources/http_responses/`
+
+## Contents
+
+### Files
+
+- **__init__.py**
+  - [Documentation](__init__.py_docs.md)
+  - [Keywords](__init__.py_kw.md)
+- **http_futures_account_orders.json**
+  - [Documentation](http_futures_account_orders.json_docs.md)
+  - [Keywords](http_futures_account_orders.json_kw.md)
+- **http_futures_account_position_side_dual.json**
+  - [Documentation](http_futures_account_position_side_dual.json_docs.md)
+  - [Keywords](http_futures_account_position_side_dual.json_kw.md)
+- **http_futures_account_positions_hedge.json**
+  - [Documentation](http_futures_account_positions_hedge.json_docs.md)
+  - [Keywords](http_futures_account_positions_hedge.json_kw.md)
+- **http_futures_account_positions_one_way.json**
+  - [Documentation](http_futures_account_positions_one_way.json_docs.md)
+  - [Keywords](http_futures_account_positions_one_way.json_kw.md)
+- **http_futures_account_symbol_config.json**
+  - [Documentation](http_futures_account_symbol_config.json_docs.md)
+  - [Keywords](http_futures_account_symbol_config.json_kw.md)
+- **http_futures_account_trades.json**
+  - [Documentation](http_futures_account_trades.json_docs.md)
+  - [Keywords](http_futures_account_trades.json_kw.md)
+- **http_futures_market_agg_trades.json**
+  - [Documentation](http_futures_market_agg_trades.json_docs.md)
+  - [Keywords](http_futures_market_agg_trades.json_kw.md)
+- **http_futures_market_asset_index.json**
+  - [Documentation](http_futures_market_asset_index.json_docs.md)
+  - [Keywords](http_futures_market_asset_index.json_kw.md)
+- **http_futures_market_blvt_nav_kline.json**
+  - [Documentation](http_futures_market_blvt_nav_kline.json_docs.md)
+  - [Keywords](http_futures_market_blvt_nav_kline.json_kw.md)
+- **http_futures_market_book_ticker.json**
+  - [Documentation](http_futures_market_book_ticker.json_docs.md)
+  - [Keywords](http_futures_market_book_ticker.json_kw.md)
+- **http_futures_market_continuous_klines.json**
+  - [Documentation](http_futures_market_continuous_klines.json_docs.md)
+  - [Keywords](http_futures_market_continuous_klines.json_kw.md)
+- **http_futures_market_depth.json**
+  - [Documentation](http_futures_market_depth.json_docs.md)
+  - [Keywords](http_futures_market_depth.json_kw.md)
+- **http_futures_market_exchange_info.json**
+  - [Documentation](http_futures_market_exchange_info.json_docs.md)
+  - [Keywords](http_futures_market_exchange_info.json_kw.md)
+- **http_futures_market_funding_rate.json**
+  - [Documentation](http_futures_market_funding_rate.json_docs.md)
+  - [Keywords](http_futures_market_funding_rate.json_kw.md)
+- **http_futures_market_global_long_short_account_ratio.json**
+  - [Documentation](http_futures_market_global_long_short_account_ratio.json_docs.md)
+  - [Keywords](http_futures_market_global_long_short_account_ratio.json_kw.md)
+- **http_futures_market_historical_trades.json**
+  - [Documentation](http_futures_market_historical_trades.json_docs.md)
+  - [Keywords](http_futures_market_historical_trades.json_kw.md)
+- **http_futures_market_index_info.json**
+  - [Documentation](http_futures_market_index_info.json_docs.md)
+  - [Keywords](http_futures_market_index_info.json_kw.md)
+- **http_futures_market_index_price_klines.json**
+  - [Documentation](http_futures_market_index_price_klines.json_docs.md)
+  - [Keywords](http_futures_market_index_price_klines.json_kw.md)
+- **http_futures_market_klines.json**
+  - [Documentation](http_futures_market_klines.json_docs.md)
+  - [Keywords](http_futures_market_klines.json_kw.md)
+- **http_futures_market_mark_price_klines.json**
+  - [Documentation](http_futures_market_mark_price_klines.json_docs.md)
+  - [Keywords](http_futures_market_mark_price_klines.json_kw.md)
+- **http_futures_market_open_interest.json**
+  - [Documentation](http_futures_market_open_interest.json_docs.md)
+  - [Keywords](http_futures_market_open_interest.json_kw.md)
+- **http_futures_market_open_interest_historical.json**
+  - [Documentation](http_futures_market_open_interest_historical.json_docs.md)
+  - [Keywords](http_futures_market_open_interest_historical.json_kw.md)
+- **http_futures_market_premium_index.json**
+  - [Documentation](http_futures_market_premium_index.json_docs.md)
+  - [Keywords](http_futures_market_premium_index.json_kw.md)
+- **http_futures_market_taker_long_short_ratio.json**
+  - [Documentation](http_futures_market_taker_long_short_ratio.json_docs.md)
+  - [Keywords](http_futures_market_taker_long_short_ratio.json_kw.md)
+- **http_futures_market_ticker_24hr.json**
+  - [Documentation](http_futures_market_ticker_24hr.json_docs.md)
+  - [Keywords](http_futures_market_ticker_24hr.json_kw.md)
+- **http_futures_market_ticker_price.json**
+  - [Documentation](http_futures_market_ticker_price.json_docs.md)
+  - [Keywords](http_futures_market_ticker_price.json_kw.md)
+- **http_futures_market_top_long_short_account_ratio.json**
+  - [Documentation](http_futures_market_top_long_short_account_ratio.json_docs.md)
+  - [Keywords](http_futures_market_top_long_short_account_ratio.json_kw.md)
+- **http_futures_market_top_long_short_position_ratio.json**
+  - [Documentation](http_futures_market_top_long_short_position_ratio.json_docs.md)
+  - [Keywords](http_futures_market_top_long_short_position_ratio.json_kw.md)
+- **http_futures_market_trades.json**
+  - [Documentation](http_futures_market_trades.json_docs.md)
+  - [Keywords](http_futures_market_trades.json_kw.md)
+- **http_spot_market_agg_trades.json**
+  - [Documentation](http_spot_market_agg_trades.json_docs.md)
+  - [Keywords](http_spot_market_agg_trades.json_kw.md)
+- **http_spot_market_avg_price.json**
+  - [Documentation](http_spot_market_avg_price.json_docs.md)
+  - [Keywords](http_spot_market_avg_price.json_kw.md)
+- **http_spot_market_book_ticker.json**
+  - [Documentation](http_spot_market_book_ticker.json_docs.md)
+  - [Keywords](http_spot_market_book_ticker.json_kw.md)
+- **http_spot_market_depth.json**
+  - [Documentation](http_spot_market_depth.json_docs.md)
+  - [Keywords](http_spot_market_depth.json_kw.md)
+- **http_spot_market_exchange_info.json**
+  - [Documentation](http_spot_market_exchange_info.json_docs.md)
+  - [Keywords](http_spot_market_exchange_info.json_kw.md)
+- **http_spot_market_historical_trades.json**
+  - [Documentation](http_spot_market_historical_trades.json_docs.md)
+  - [Keywords](http_spot_market_historical_trades.json_kw.md)
+- **http_spot_market_klines.json**
+  - [Documentation](http_spot_market_klines.json_docs.md)
+  - [Keywords](http_spot_market_klines.json_kw.md)
+- **http_spot_market_ping.json**
+  - [Documentation](http_spot_market_ping.json_docs.md)
+  - [Keywords](http_spot_market_ping.json_kw.md)
+- **http_spot_market_ticker_price.json**
+  - [Documentation](http_spot_market_ticker_price.json_docs.md)
+  - [Keywords](http_spot_market_ticker_price.json_kw.md)
+- **http_spot_market_time.json**
+  - [Documentation](http_spot_market_time.json_docs.md)
+  - [Keywords](http_spot_market_time.json_kw.md)
+- **http_spot_market_trades.json**
+  - [Documentation](http_spot_market_trades.json_docs.md)
+  - [Keywords](http_spot_market_trades.json_kw.md)
+- **http_spot_streams_listen_key.json**
+  - [Documentation](http_spot_streams_listen_key.json_docs.md)
+  - [Keywords](http_spot_streams_listen_key.json_kw.md)
+- **http_spot_wallet_account.json**
+  - [Documentation](http_spot_wallet_account.json_docs.md)
+  - [Keywords](http_spot_wallet_account.json_kw.md)
+- **http_wallet_trading_fee.json**
+  - [Documentation](http_wallet_trading_fee.json_docs.md)
+  - [Keywords](http_wallet_trading_fee.json_kw.md)
+- **http_wallet_trading_fees.json**
+  - [Documentation](http_wallet_trading_fees.json_docs.md)
+  - [Keywords](http_wallet_trading_fees.json_kw.md)
+
+
+---
+*Generated on 2025-11-18T21:56:34.844906Z*

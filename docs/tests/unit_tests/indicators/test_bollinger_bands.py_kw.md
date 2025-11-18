@@ -1,0 +1,36 @@
+# Keywords: test_bollinger_bands.py
+
+## File Path
+`tests/unit_tests/indicators/test_bollinger_bands.py`
+
+## Keyword Index
+
+Total unique keywords: 4
+
+### TestBollingerBands
+
+- **Type**: class
+- **File**: [tests/unit_tests/indicators/test_bollinger_bands.py](../test_bollinger_bands.py_docs.md)
+- **Description**: Class identifier defined or used in this file
+
+### nautilus_trader.indicators
+
+- **Type**: import
+- **File**: [tests/unit_tests/indicators/test_bollinger_bands.py](../test_bollinger_bands.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.test_kit.providers
+
+- **Type**: import
+- **File**: [tests/unit_tests/indicators/test_bollinger_bands.py](../test_bollinger_bands.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+### nautilus_trader.test_kit.stubs.data
+
+- **Type**: import
+- **File**: [tests/unit_tests/indicators/test_bollinger_bands.py](../test_bollinger_bands.py_docs.md)
+- **Description**: Import identifier defined or used in this file
+
+
+---
+*Generated on 2025-11-18T21:55:11.413704Z*

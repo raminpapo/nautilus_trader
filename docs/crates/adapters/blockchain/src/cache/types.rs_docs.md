@@ -1,0 +1,245 @@
+# Documentation: types.rs
+
+## File Metadata
+
+- **Path**: `crates/adapters/blockchain/src/cache/types.rs`
+- **Size**: 5,229 bytes
+- **Lines**: 167
+- **Language**: Rust
+
+## Original Source
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+use std::str::FromStr;
+
+use alloy::primitives::{I256, U160, U256};
+use sqlx::{
+    Database, Decode, Encode, Postgres, Type,
+    encode::IsNull,
+    error::BoxDynError,
+    postgres::{PgHasArrayType, PgTypeInfo},
+};
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct I256Pg(pub I256);
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct U256Pg(pub U256);
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct U160Pg(pub U160);
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct U128Pg(pub u128);
+
+// Implement Type trait for SqlI256
+impl Type<Postgres> for I256Pg {
+    fn type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("i256")
+    }
+}
+
+// Implement Type trait for SqlU256
+impl Type<Postgres> for U256Pg {
+    fn type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("u256")
+    }
+}
+
+// Implement Type trait for U160Pg
+impl Type<Postgres> for U160Pg {
+    fn type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("u160")
+    }
+}
+
+// Implement Type trait for U128Pg
+impl Type<Postgres> for U128Pg {
+    fn type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("u128")
+    }
+}
+
+impl<'q> Encode<'q, Postgres> for I256Pg {
+    fn encode_by_ref(
+        &self,
+        buf: &mut <Postgres as Database>::ArgumentBuffer<'_>,
+    ) -> Result<IsNull, BoxDynError> {
+        let s = self.0.to_string();
+        <&str as Encode<Postgres>>::encode(&s, buf)
+    }
+}
+
+impl<'q> Encode<'q, Postgres> for U256Pg {
+    fn encode_by_ref(
+        &self,
+        buf: &mut <Postgres as Database>::ArgumentBuffer<'_>,
+    ) -> Result<IsNull, BoxDynError> {
+        // Ensure we send decimal format, not hex format to PostgreSQL
+        let decimal_str = format!("{}", self.0);
+        <&str as Encode<Postgres>>::encode(&decimal_str, buf)
+    }
+}
+
+impl<'q> Encode<'q, Postgres> for U160Pg {
+    fn encode_by_ref(
+        &self,
+        buf: &mut <Postgres as Database>::ArgumentBuffer<'_>,
+    ) -> Result<IsNull, BoxDynError> {
+        let decimal_str = format!("{}", self.0);
+        <&str as Encode<Postgres>>::encode(&decimal_str, buf)
+    }
+}
+
+impl<'q> Encode<'q, Postgres> for U128Pg {
+    fn encode_by_ref(
+        &self,
+        buf: &mut <Postgres as Database>::ArgumentBuffer<'_>,
+    ) -> Result<IsNull, BoxDynError> {
+        let decimal_str = self.0.to_string();
+        <&str as Encode<Postgres>>::encode(&decimal_str, buf)
+    }
+}
+
+// Implement Decode trait for SqlI256
+impl<'r> Decode<'r, Postgres> for I256Pg {
+    fn decode(value: sqlx::postgres::PgValueRef<'r>) -> Result<Self, sqlx::error::BoxDynError> {
+        let s = <String as Decode<Postgres>>::decode(value)?;
+        let i256 = I256::from_str(&s).map_err(|e| format!("Failed to parse I256: {}", e))?;
+        Ok(Self(i256))
+    }
+}
+
+// Implement Decode trait for SqlU256
+impl<'r> Decode<'r, Postgres> for U256Pg {
+    fn decode(value: sqlx::postgres::PgValueRef<'r>) -> Result<Self, sqlx::error::BoxDynError> {
+        let s = <String as Decode<Postgres>>::decode(value)?;
+        let u256 = U256::from_str(&s).map_err(|e| format!("Failed to parse U256: {}", e))?;
+        Ok(Self(u256))
+    }
+}
+
+// Implement Decode trait for U160Pg
+impl<'r> Decode<'r, Postgres> for U160Pg {
+    fn decode(value: sqlx::postgres::PgValueRef<'r>) -> Result<Self, sqlx::error::BoxDynError> {
+        let s = <String as Decode<Postgres>>::decode(value)?;
+        let u160 = U160::from_str(&s).map_err(|e| format!("Failed to parse U160: {}", e))?;
+        Ok(Self(u160))
+    }
+}
+
+// Implement Decode trait for U128Pg
+impl<'r> Decode<'r, Postgres> for U128Pg {
+    fn decode(value: sqlx::postgres::PgValueRef<'r>) -> Result<Self, sqlx::error::BoxDynError> {
+        let s = <String as Decode<Postgres>>::decode(value)?;
+        let u128_val = u128::from_str(&s).map_err(|e| format!("Failed to parse U128: {}", e))?;
+        Ok(Self(u128_val))
+    }
+}
+
+// Implement PgHasArrayType for array support
+impl PgHasArrayType for I256Pg {
+    fn array_type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("_i256")
+    }
+}
+
+impl PgHasArrayType for U256Pg {
+    fn array_type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("_u256")
+    }
+}
+
+impl PgHasArrayType for U160Pg {
+    fn array_type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("_u160")
+    }
+}
+
+impl PgHasArrayType for U128Pg {
+    fn array_type_info() -> PgTypeInfo {
+        PgTypeInfo::with_name("_u128")
+    }
+}
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. It defines 16 function(s) and 4 class(es).
+
+## Detailed Walkthrough
+
+### Functions
+- **`type_info()`**: Function defined in this file
+- **`type_info()`**: Function defined in this file
+- **`type_info()`**: Function defined in this file
+- **`type_info()`**: Function defined in this file
+- **`encode_by_ref()`**: Function defined in this file
+- **`encode_by_ref()`**: Function defined in this file
+- **`encode_by_ref()`**: Function defined in this file
+- **`encode_by_ref()`**: Function defined in this file
+- **`decode()`**: Function defined in this file
+- **`decode()`**: Function defined in this file
+- **`decode()`**: Function defined in this file
+- **`decode()`**: Function defined in this file
+- **`array_type_info()`**: Function defined in this file
+- **`array_type_info()`**: Function defined in this file
+- **`array_type_info()`**: Function defined in this file
+- **`array_type_info()`**: Function defined in this file
+
+### Classes
+- **`I256Pg`**: Class defined in this file
+- **`U256Pg`**: Class defined in this file
+- **`U160Pg`**: Class defined in this file
+- **`U128Pg`**: Class defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 13
+
+
+**Functions**: `array_type_info`, `decode`, `encode_by_ref`, `type_info`
+**Impls**: `Decode`, `Encode`, `PgHasArrayType`, `Type`
+**Structs**: `I256Pg`, `U128Pg`, `U160Pg`, `U256Pg`
+**Traits**: `for`
+
+## Related Files
+
+This file is located in `crates/adapters/blockchain/src/cache/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:54:59.177013Z*

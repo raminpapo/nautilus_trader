@@ -1,0 +1,393 @@
+# Documentation: denied.rs
+
+## File Metadata
+
+- **Path**: `crates/model/src/events/order/denied.rs`
+- **Size**: 7,753 bytes
+- **Lines**: 313
+- **Language**: Rust
+
+## Original Source
+
+```rust
+// -------------------------------------------------------------------------------------------------
+//  Copyright (C) 2015-2025 Nautech Systems Pty Ltd. All rights reserved.
+//  https://nautechsystems.io
+//
+//  Licensed under the GNU Lesser General Public License Version 3.0 (the "License");
+//  You may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at https://www.gnu.org/licenses/lgpl-3.0.en.html
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+// -------------------------------------------------------------------------------------------------
+
+use std::fmt::{Debug, Display};
+
+use derive_builder::Builder;
+use nautilus_core::{UUID4, UnixNanos};
+use rust_decimal::Decimal;
+use serde::{Deserialize, Serialize};
+use ustr::Ustr;
+
+use crate::{
+    enums::{
+        ContingencyType, LiquiditySide, OrderSide, OrderType, TimeInForce, TrailingOffsetType,
+        TriggerType,
+    },
+    events::OrderEvent,
+    identifiers::{
+        AccountId, ClientOrderId, ExecAlgorithmId, InstrumentId, OrderListId, PositionId,
+        StrategyId, TradeId, TraderId, VenueOrderId,
+    },
+    types::{Currency, Money, Price, Quantity},
+};
+
+/// Represents an event where an order has been denied by the Nautilus system.
+///
+/// This could be due an unsupported feature, a risk limit exceedance, or for
+/// any other reason that an otherwise valid order is not able to be submitted.
+#[repr(C)]
+#[derive(Clone, Copy, PartialEq, Eq, Default, Serialize, Deserialize, Builder)]
+#[builder(default)]
+#[serde(tag = "type")]
+#[cfg_attr(
+    feature = "python",
+    pyo3::pyclass(module = "nautilus_trader.core.nautilus_pyo3.model")
+)]
+pub struct OrderDenied {
+    /// The trader ID associated with the event.
+    pub trader_id: TraderId,
+    /// The strategy ID associated with the event.
+    pub strategy_id: StrategyId,
+    /// The instrument ID associated with the event.
+    pub instrument_id: InstrumentId,
+    /// The client order ID associated with the event.
+    pub client_order_id: ClientOrderId,
+    /// The reason the order was denied.
+    pub reason: Ustr,
+    /// The unique identifier for the event.
+    pub event_id: UUID4,
+    /// UNIX timestamp (nanoseconds) when the event occurred.
+    pub ts_event: UnixNanos,
+    /// UNIX timestamp (nanoseconds) when the event was initialized.
+    pub ts_init: UnixNanos,
+}
+
+impl OrderDenied {
+    /// Creates a new [`OrderDenied`] instance.
+    #[allow(clippy::too_many_arguments)]
+    pub fn new(
+        trader_id: TraderId,
+        strategy_id: StrategyId,
+        instrument_id: InstrumentId,
+        client_order_id: ClientOrderId,
+        reason: Ustr,
+        event_id: UUID4,
+        ts_event: UnixNanos,
+        ts_init: UnixNanos,
+    ) -> Self {
+        Self {
+            trader_id,
+            strategy_id,
+            instrument_id,
+            client_order_id,
+            reason,
+            event_id,
+            ts_event,
+            ts_init,
+        }
+    }
+}
+
+impl Debug for OrderDenied {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(
+            f,
+            "{}(trader_id={}, strategy_id={}, instrument_id={}, client_order_id={}, reason='{}', event_id={}, ts_init={})",
+            stringify!(OrderDenied),
+            self.trader_id,
+            self.strategy_id,
+            self.instrument_id,
+            self.client_order_id,
+            self.reason,
+            self.event_id,
+            self.ts_init
+        )
+    }
+}
+
+impl Display for OrderDenied {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(
+            f,
+            "{}(instrument_id={}, client_order_id={}, reason='{}')",
+            stringify!(OrderDenied),
+            self.instrument_id,
+            self.client_order_id,
+            self.reason
+        )
+    }
+}
+
+impl OrderEvent for OrderDenied {
+    fn id(&self) -> UUID4 {
+        self.event_id
+    }
+
+    fn kind(&self) -> &str {
+        stringify!(OrderDenied)
+    }
+
+    fn order_type(&self) -> Option<OrderType> {
+        None
+    }
+
+    fn order_side(&self) -> Option<OrderSide> {
+        None
+    }
+
+    fn trader_id(&self) -> TraderId {
+        self.trader_id
+    }
+
+    fn strategy_id(&self) -> StrategyId {
+        self.strategy_id
+    }
+
+    fn instrument_id(&self) -> InstrumentId {
+        self.instrument_id
+    }
+
+    fn trade_id(&self) -> Option<TradeId> {
+        None
+    }
+
+    fn currency(&self) -> Option<Currency> {
+        None
+    }
+
+    fn client_order_id(&self) -> ClientOrderId {
+        self.client_order_id
+    }
+
+    fn reason(&self) -> Option<Ustr> {
+        Some(self.reason)
+    }
+
+    fn quantity(&self) -> Option<Quantity> {
+        None
+    }
+
+    fn time_in_force(&self) -> Option<TimeInForce> {
+        None
+    }
+
+    fn liquidity_side(&self) -> Option<LiquiditySide> {
+        None
+    }
+
+    fn post_only(&self) -> Option<bool> {
+        None
+    }
+
+    fn reduce_only(&self) -> Option<bool> {
+        None
+    }
+
+    fn quote_quantity(&self) -> Option<bool> {
+        None
+    }
+
+    fn reconciliation(&self) -> bool {
+        false
+    }
+
+    fn price(&self) -> Option<Price> {
+        None
+    }
+
+    fn last_px(&self) -> Option<Price> {
+        None
+    }
+
+    fn last_qty(&self) -> Option<Quantity> {
+        None
+    }
+
+    fn trigger_price(&self) -> Option<Price> {
+        None
+    }
+
+    fn trigger_type(&self) -> Option<TriggerType> {
+        None
+    }
+
+    fn limit_offset(&self) -> Option<Decimal> {
+        None
+    }
+
+    fn trailing_offset(&self) -> Option<Decimal> {
+        None
+    }
+
+    fn trailing_offset_type(&self) -> Option<TrailingOffsetType> {
+        None
+    }
+
+    fn expire_time(&self) -> Option<UnixNanos> {
+        None
+    }
+
+    fn display_qty(&self) -> Option<Quantity> {
+        None
+    }
+
+    fn emulation_trigger(&self) -> Option<TriggerType> {
+        None
+    }
+
+    fn trigger_instrument_id(&self) -> Option<InstrumentId> {
+        None
+    }
+
+    fn contingency_type(&self) -> Option<ContingencyType> {
+        None
+    }
+
+    fn order_list_id(&self) -> Option<OrderListId> {
+        None
+    }
+
+    fn linked_order_ids(&self) -> Option<Vec<ClientOrderId>> {
+        None
+    }
+
+    fn parent_order_id(&self) -> Option<ClientOrderId> {
+        None
+    }
+
+    fn exec_algorithm_id(&self) -> Option<ExecAlgorithmId> {
+        None
+    }
+
+    fn exec_spawn_id(&self) -> Option<ClientOrderId> {
+        None
+    }
+
+    fn venue_order_id(&self) -> Option<VenueOrderId> {
+        None
+    }
+
+    fn account_id(&self) -> Option<AccountId> {
+        None
+    }
+
+    fn position_id(&self) -> Option<PositionId> {
+        None
+    }
+
+    fn commission(&self) -> Option<Money> {
+        None
+    }
+
+    fn ts_event(&self) -> UnixNanos {
+        self.ts_event
+    }
+
+    fn ts_init(&self) -> UnixNanos {
+        self.ts_init
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Tests
+////////////////////////////////////////////////////////////////////////////////
+#[cfg(test)]
+mod tests {
+    use rstest::rstest;
+
+    use super::*;
+    use crate::events::order::stubs::*;
+
+    #[rstest]
+    fn test_order_denied_display(order_denied_max_submitted_rate: OrderDenied) {
+        let display = format!("{order_denied_max_submitted_rate}");
+        assert_eq!(
+            display,
+            "OrderDenied(instrument_id=BTCUSDT.COINBASE, client_order_id=O-19700101-000000-001-001-1, reason='Exceeded MAX_ORDER_SUBMIT_RATE')"
+        );
+    }
+}
+
+```
+
+## High-Level Overview
+
+This file is part of the NautilusTrader repository. It defines 46 function(s) and 1 class(es).
+
+## Detailed Walkthrough
+
+### Functions
+- **`new()`**: Function defined in this file
+- **`fmt()`**: Function defined in this file
+- **`fmt()`**: Function defined in this file
+- **`id()`**: Function defined in this file
+- **`kind()`**: Function defined in this file
+- **`order_type()`**: Function defined in this file
+- **`order_side()`**: Function defined in this file
+- **`trader_id()`**: Function defined in this file
+- **`strategy_id()`**: Function defined in this file
+- **`instrument_id()`**: Function defined in this file
+- **`trade_id()`**: Function defined in this file
+- **`currency()`**: Function defined in this file
+- **`client_order_id()`**: Function defined in this file
+- **`reason()`**: Function defined in this file
+- **`quantity()`**: Function defined in this file
+- **`time_in_force()`**: Function defined in this file
+- **`liquidity_side()`**: Function defined in this file
+- **`post_only()`**: Function defined in this file
+- **`reduce_only()`**: Function defined in this file
+- **`quote_quantity()`**: Function defined in this file
+
+*...and 26 more functions*
+
+### Classes
+- **`OrderDenied`**: Class defined in this file
+
+
+## Keywords and Identifiers
+
+Total unique keywords extracted: 49
+
+
+**Functions**: `account_id`, `client_order_id`, `commission`, `contingency_type`, `currency`, `display_qty`, `emulation_trigger`, `exec_algorithm_id`, `exec_spawn_id`, `expire_time`, `fmt`, `id`, `instrument_id`, `kind`, `last_px`, `last_qty`, `limit_offset`, `linked_order_ids`, `liquidity_side`, `new`, `order_list_id`, `order_side`, `order_type`, `parent_order_id`, `position_id`, `post_only`, `price`, `quantity`, `quote_quantity`, `reason` *(+15 more)*
+**Impls**: `Debug`, `Display`, `OrderDenied`, `OrderEvent`
+**Structs**: `OrderDenied`
+
+## Related Files
+
+This file is located in `crates/model/src/events/order/`. Related files may include:
+- Other files in the same directory
+- Test files in corresponding `tests/` directory
+- Parent module files (`__init__.py`, `mod.rs`, etc.)
+
+See the folder documentation for complete context.
+
+## Testing and Usage
+
+Tests for this file may be located in:
+- `tests/` directory in the same folder
+- Corresponding test module in the project
+
+Run the full test suite to verify functionality.
+
+## Performance and Security Considerations
+
+No specific security or performance concerns identified. Follow general best practices.
+
+---
+*Generated on 2025-11-18T21:55:02.472191Z*
